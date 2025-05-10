@@ -1,1 +1,1 @@
-/mods/
+/RLCraft Dregora v1.0.6b Server Pack/mods/
