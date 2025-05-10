@@ -1,0 +1,11 @@
+RLCraft_BasicZombie,199,199,-1991,-1991
+RLCraft_UndergroundRuin1,196,205,-1994,-1985
+StonePlantMound2,341,354,-1905,-1893
+StonePlantBoulder,374,384,-1944,-1934
+ShrineSmallAir,410,418,-1969,-1961
+RLCraft_DecentSpider,413,413,-1926,-1926
+RLCraft_UndergroundRuin3,407,415,-1931,-1923
+StonePlantMound,405,410,-1887,-1882
+StonePlantMound4,408,415,-1869,-1862
+StonePlantBoulder,374,384,-1794,-1784
+UndergroundCrypt,297,311,-1696,-1668

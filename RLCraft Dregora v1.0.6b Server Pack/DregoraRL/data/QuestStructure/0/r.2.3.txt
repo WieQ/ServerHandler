@@ -1,0 +1,4 @@
+MeteorSite,1143,1173,1626,1641
+UnnaturalCrater,1142,1182,1642,1682
+RLCraft_BasicCaveSpider,1207,1207,1698,1698
+RLCraft_UndergroundRuin1,1201,1210,1692,1701

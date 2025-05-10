@@ -1,0 +1,12 @@
+RLCraft_Vineyard,3115,3135,-4624,-4596
+P_VillageLibrary,3113,3129,-4658,-4639
+P_VillageFarmhouse,3113,3125,-4675,-4663
+RLCraft_DecentCaveSpider,3079,3079,-4884,-4884
+RLCraft_UndergroundRuin3,3077,3085,-4889,-4881
+ThreeTowers,3079,3110,-4964,-4932
+P_VillageFarmhouse,3094,3106,-4996,-4984
+VillageWoodMill,3094,3110,-4981,-4968
+RLCraft_Vineyard,3124,3144,-5016,-4988
+VillageMarketplace,3094,3108,-5030,-5016
+P_VillageLibrary,3124,3140,-5038,-5019
+P_VillageInn,3115,3124,-5053,-5042

@@ -1,0 +1,12 @@
+DesertHut,-890,-880,2418,2427
+RLCraft_BasicSpider,-732,-732,2173,2173
+RLCraft_UndergroundRuin1,-735,-726,2167,2176
+RLCraft_BasicWitch,-697,-697,2125,2125
+RLCraft_UndergroundRuin1,-703,-694,2122,2131
+ShrineSmallFire,-751,-741,2178,2188
+RLCraft_SmallUndergroundSkeleton,-579,-571,2286,2294
+SmallWoodenCottage2,-778,-770,2180,2188
+RLCraft_DecentZombie,-549,-549,2267,2267
+RLCraft_UndergroundRuin2,-551,-544,2262,2272
+RLCraft_DesertTown,-803,-737,2221,2287
+SmallWoodenCottage2,-786,-778,2108,2116

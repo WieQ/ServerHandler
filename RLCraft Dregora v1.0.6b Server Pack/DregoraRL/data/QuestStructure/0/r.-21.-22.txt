@@ -1,0 +1,10 @@
+StonePlantBoulder,-10823,-10813,-11275,-11265
+RLCraft_PlainsCamp,-10844,-10798,-11292,-11253
+RLCraft_DecentCaveSpider,-10978,-10978,-11290,-11290
+RLCraft_UndergroundRuin3,-10983,-10975,-11296,-11288
+StonePlantMound2,-11010,-10998,-11281,-11268
+StonePlantMound1,-10876,-10870,-11392,-11386
+StonePlantMound2,-10911,-10898,-11419,-11407
+StonePlantMound,-10901,-10896,-11421,-11416
+RLCraft_LargeUndergroundTown,-11319,-11206,-11457,-11320
+RLCraft_LargeUndergroundTown,-11314,-11177,-11404,-11291

@@ -1,0 +1,14 @@
+StonePlantBoulder,-2391,-2381,1551,1561
+StonePlantMound,-2412,-2407,1611,1616
+DinosaurSkeleton,-2305,-2296,1595,1641
+StonePlantBoulder,-2382,-2372,1657,1667
+StonePlantMound4,-2455,-2448,1640,1647
+AbandonedWoodTower,-2467,-2431,1639,1669
+StoneBoulder,-2456,-2447,1681,1690
+StonePlantMound,-2452,-2447,1691,1696
+RLCraft_BasicWitch,-2480,-2480,1698,1698
+RLCraft_UndergroundRuin1,-2483,-2474,1695,1704
+RLCraft_DecentSpider,-2556,-2556,1576,1576
+RLCraft_UndergroundRuin2,-2561,-2551,1571,1578
+StoneBoulder,-2557,-2548,1771,1780
+RLCraft_SmallUndergroundSkeleton,-2179,-2171,1580,1588

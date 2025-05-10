@@ -1,0 +1,5 @@
+ShrineSmallWater,-3771,-3763,-4235,-4227
+BlazeSpawnerCrystal,-4020,-4014,-4477,-4471
+RLCraft_DecentSpider,-3917,-3917,-4517,-4517
+RLCraft_UndergroundRuin2,-3922,-3912,-4522,-4515
+P_SmallShip,-4056,-4036,-4556,-4550

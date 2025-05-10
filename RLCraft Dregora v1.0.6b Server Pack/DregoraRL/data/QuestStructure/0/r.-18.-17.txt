@@ -1,0 +1,3 @@
+ShrineSmallFire,-9710,-9700,-9186,-9176
+DesertHut,-9639,-9629,-9141,-9132
+UndergroundCrypt,-9668,-9640,-9071,-9057

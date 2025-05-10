@@ -1,0 +1,4 @@
+P_LargeShip,-11808,-11790,-6629,-6569
+RLCraft_DecentZombie,-11893,-11893,-6210,-6210
+RLCraft_UndergroundRuin3,-11896,-11888,-6216,-6208
+ShrineSmallAir,-11982,-11974,-6215,-6207

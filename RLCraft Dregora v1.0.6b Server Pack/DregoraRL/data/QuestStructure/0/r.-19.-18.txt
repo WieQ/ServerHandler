@@ -1,0 +1,15 @@
+P_VillageFarmhouse,-9753,-9741,-9671,-9659
+VillageSavannaGlassworks,-9743,-9733,-9642,-9630
+P_VillageHouse2,-9759,-9742,-9605,-9588
+RLCraft_DecentSkeleton,-9745,-9745,-9603,-9603
+RLCraft_UndergroundRuin2,-9750,-9740,-9608,-9601
+StonePlantMound3,-9849,-9838,-9455,-9446
+P_WitchDungeon,-9974,-9940,-9658,-9641
+RLCraft_DecentZombie,-10113,-10113,-9574,-9574
+RLCraft_UndergroundRuin2,-10115,-10108,-9579,-9569
+MysticalTree,-10122,-10106,-9541,-9526
+StonePlantMound4,-10157,-10150,-9659,-9652
+StoneBoulder,-10117,-10108,-9726,-9717
+StonePlantMound2,-10070,-10058,-9702,-9689
+RLCraft_BasicSpider,-10043,-10043,-9697,-9697
+RLCraft_UndergroundRuin1,-10046,-10037,-9703,-9694

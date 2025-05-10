@@ -1,0 +1,6 @@
+RLCraft_DecentCaveSpider,-4285,-4285,-4639,-4639
+RLCraft_UndergroundRuin3,-4287,-4279,-4642,-4634
+RLCraft_BasicSkeleton,-4167,-4167,-5045,-5045
+RLCraft_UndergroundRuin1,-4173,-4164,-5048,-5039
+P_SmallShip,-4264,-4258,-5042,-5022
+StonePlantMound1,-4256,-4250,-4967,-4961

@@ -1,0 +1,5 @@
+WoodWallRemains,-6147,-6139,-7879,-7851
+RLCraft_SmallUndergroundSkeleton,-6093,-6085,-7905,-7897
+UndergroundTreeoid,-6106,-6083,-8134,-8108
+SmallWoodenCottage2,-6071,-6063,-8141,-8133
+BrickHenge,-6128,-6112,-8174,-8158

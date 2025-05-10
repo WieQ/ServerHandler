@@ -1,0 +1,11 @@
+RLCraft_BasicWitch,2932,2932,211,211
+RLCraft_UndergroundRuin1,2929,2938,205,214
+ShrineSmallAir,2855,2863,237,245
+WoodWallRemains,2842,2850,201,229
+UndergroundTreeoid,2799,2825,173,196
+DesertWatchtower,2595,2605,159,169
+SmallClockworkSite,2584,2603,-23,-1
+DinosaurSkeleton,2656,2665,133,179
+DinosaurSkeleton,2701,2710,221,267
+RLCraft_LargeUndergroundTown,2637,2750,200,337
+SmallClockworkSite,2712,2731,30,52

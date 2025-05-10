@@ -1,0 +1,5 @@
+RLCraft_AgentStarbuck_WaterBase,-370,-353,-531,-519
+UndergroundCultChamber,-395,-353,-603,-571
+StonePlantMound3,-79,-70,-576,-565
+RLCraft_BasicSpider,-211,-211,-873,-873
+RLCraft_UndergroundRuin1,-214,-205,-879,-870

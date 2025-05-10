@@ -1,0 +1,6 @@
+DinosaurSkull,-2013,-2002,182,201
+FallenPalmTree,-1882,-1872,395,399
+RLCraft_BasicSkeleton,-1948,-1948,412,412
+RLCraft_UndergroundRuin1,-1951,-1942,409,418
+P_AncientTeleporter,-1738,-1703,329,362
+RLCraft_LargeUndergroundTown,-1653,-1516,373,486

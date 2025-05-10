@@ -1,0 +1,7 @@
+P_LargeShip,-4292,-4232,-5134,-5116
+RLCraft_DecentCaveSpider,-4149,-4149,-5488,-5488
+RLCraft_UndergroundRuin3,-4151,-4143,-5493,-5485
+SmallWoodenCottage1,-4176,-4165,-5526,-5520
+RLCraft_BasicSpider,-4152,-4152,-5529,-5529
+RLCraft_UndergroundRuin1,-4155,-4146,-5535,-5526
+ElvenPond,-4184,-4155,-5608,-5578

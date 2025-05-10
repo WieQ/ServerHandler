@@ -1,0 +1,5 @@
+RLCraft_SmallUndergroundSkeleton,-751,-743,1043,1051
+DinosaurSkeleton,-892,-846,1093,1102
+RLCraft_DecentSpider,-735,-735,1086,1086
+RLCraft_UndergroundRuin2,-740,-730,1081,1088
+DesertBeacon,-551,-545,1139,1145

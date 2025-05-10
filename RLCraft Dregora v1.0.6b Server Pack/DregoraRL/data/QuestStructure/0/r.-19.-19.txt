@@ -1,0 +1,12 @@
+RLCraft_SmallUndergroundSkeleton,-9810,-9802,-9788,-9780
+SmallClockworkSite,-9856,-9837,-9779,-9757
+SmallClockworkSite,-9900,-9878,-9784,-9765
+StonePlantMound3,-10046,-10037,-9736,-9725
+StonePlantMound3,-10088,-10079,-9771,-9760
+StonePlantBoulder,-10134,-10124,-9836,-9826
+StonePlantMound4,-10112,-10105,-9850,-9843
+StonePlantBoulder,-10167,-10157,-9901,-9891
+StoneBoulder,-10232,-10223,-10196,-10187
+StonePlantBoulder,-10220,-10210,-10166,-10156
+StonePlantMound2,-10218,-10205,-10127,-10115
+StonePlantMound3,-10175,-10164,-10186,-10177

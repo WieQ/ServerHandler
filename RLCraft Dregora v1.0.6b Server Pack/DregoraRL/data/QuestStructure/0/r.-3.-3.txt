@@ -1,0 +1,7 @@
+MeteorSite,-1567,-1552,-1934,-1904
+UndergroundCultChamber,-1562,-1520,-1592,-1560
+RLCraft_SmallUndergroundSkeleton,-1632,-1624,-1797,-1789
+RLCraft_SmallUndergroundSkeleton,-1601,-1593,-1846,-1838
+RLCraft_SmallUndergroundSkeleton,-1670,-1662,-1865,-1857
+RLCraft_UndergroundFarm,-1847,-1804,-1969,-1927
+DinosaurSkeleton,-1577,-1568,-2027,-1981

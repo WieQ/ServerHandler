@@ -1,0 +1,4 @@
+StoneLeafMound,-4047,-4040,-5296,-5287
+PeacefulCrypt,-3997,-3981,-5425,-5401
+BrickHenge,-4067,-4051,-5515,-5499
+DinosaurSkull,-4037,-4026,-5519,-5500

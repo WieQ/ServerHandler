@@ -1,0 +1,14 @@
+RLCraft_DecentWitch,1090,1090,-631,-631
+RLCraft_UndergroundRuin2,1088,1095,-636,-626
+StoneLeafMound,1431,1438,-636,-627
+RLCraft_DecentZombie,1290,1290,-541,-541
+RLCraft_UndergroundRuin3,1287,1295,-547,-539
+RLCraft_DecentSpider,1320,1320,-1015,-1015
+RLCraft_UndergroundRuin2,1318,1325,-1020,-1010
+StonePlantMound1,1513,1519,-977,-971
+ClayWaterMound,1387,1394,-987,-979
+StonePlantMound4,1393,1400,-943,-936
+StoneLeafMound,1420,1427,-928,-919
+DinosaurSkull,1460,1479,-851,-840
+StonePlantMound,1512,1517,-837,-832
+StonePlantMound1,1483,1489,-785,-779

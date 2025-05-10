@@ -1,0 +1,17 @@
+StonePlantMound2,-11631,-11619,-7153,-7140
+StonePlantMound,-11642,-11637,-7118,-7113
+StonePlantMound2,-11599,-11586,-7107,-7095
+StonePlantMound2,-11314,-11302,-7114,-7101
+P_VillageFarmhouse,-11590,-11578,-7101,-7089
+StoneLeafMound,-11373,-11366,-7083,-7074
+ShrineSmallAir,-11599,-11591,-7060,-7052
+BlazeSpawnerCrystal,-11482,-11476,-7024,-7018
+StonePlantMound1,-11417,-11411,-7030,-7024
+StonePlantMound1,-11351,-11345,-7022,-7016
+StonePlantBoulder,-11329,-11319,-6997,-6987
+ClayWaterMound,-11452,-11445,-6948,-6940
+StonePlantMound3,-11430,-11421,-6916,-6905
+StonePlantMound1,-11414,-11408,-6879,-6873
+StoneBoulder,-11399,-11390,-6863,-6854
+BlazeSpawnerCrystal,-11434,-11428,-6802,-6796
+P_IslandCity,-11466,-11160,-6905,-6571

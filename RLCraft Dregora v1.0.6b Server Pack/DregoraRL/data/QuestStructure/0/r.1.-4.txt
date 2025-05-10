@@ -1,0 +1,2 @@
+StoneLeafMound,933,940,-2057,-2048
+RLCraft_SmallUndergroundSkeleton,984,992,-2118,-2110

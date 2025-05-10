@@ -1,0 +1,16 @@
+RLCraft_SmallUndergroundSkeleton,-958,-950,2581,2589
+BigClockworkSite,-977,-932,2586,2621
+DinosaurSkull,-926,-907,2619,2630
+FallenPalmTree,-633,-623,3040,3044
+DinosaurSkeleton,-734,-725,2969,3015
+P_WitchDungeon,-767,-750,2951,2985
+RLCraft_DecentZombie,-661,-661,2936,2936
+RLCraft_UndergroundRuin3,-666,-658,2930,2938
+FallenPalmTree,-676,-666,2901,2905
+RLCraft_BasicSpider,-521,-521,3057,3057
+RLCraft_UndergroundRuin1,-524,-515,3051,3060
+ThreeTowers,-553,-522,2903,2935
+RLCraft_BasicSkeleton,-568,-568,2667,2667
+RLCraft_UndergroundRuin1,-574,-565,2661,2670
+RLCraft_DecentSpider,-589,-589,2646,2646
+RLCraft_UndergroundRuin2,-591,-584,2641,2651

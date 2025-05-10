@@ -1,0 +1,14 @@
+RLCraft_DecentSkeleton,-2331,-2331,2396,2396
+UndergroundCrypt,-2328,-2314,2380,2408
+RLCraft_UndergroundRuin3,-2333,-2325,2393,2401
+RLCraft_DecentWitch,-2413,-2413,2409,2409
+RLCraft_UndergroundRuin2,-2418,-2408,2404,2411
+RLCraft_DecentCaveSpider,-2428,-2428,2495,2495
+RLCraft_UndergroundRuin2,-2430,-2423,2490,2500
+RLCraft_DecentSpider,-2249,-2249,2476,2476
+RLCraft_UndergroundRuin2,-2254,-2244,2474,2481
+RLCraft_SmallUndergroundSkeleton,-2347,-2339,2555,2563
+RLCraft_DecentSpider,-2099,-2099,2535,2535
+RLCraft_UndergroundRuin3,-2102,-2094,2529,2537
+RLCraft_DecentZombie,-2117,-2117,2544,2544
+RLCraft_UndergroundRuin2,-2122,-2112,2542,2549

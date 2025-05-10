@@ -1,0 +1,14 @@
+DesertWatchtower,-474,-464,1160,1170
+ShrineSmallWater,-324,-316,1098,1106
+UndergroundTreeoid,157,180,1048,1074
+P_SmallShip,266,272,1053,1073
+SmallClockworkSite,422,441,1439,1461
+FallenPalmTree,444,448,1530,1540
+P_SmallShip,230,250,1387,1393
+UndergroundCrypt,222,250,1354,1368
+P_SmallShip,148,154,1372,1392
+P_SmallShip,342,348,1203,1223
+RLCraft_DecentCaveSpider,282,282,1201,1201
+RLCraft_UndergroundRuin2,277,284,1196,1206
+RLCraft_BasicSkeleton,448,448,1125,1125
+RLCraft_UndergroundRuin1,442,451,1119,1128

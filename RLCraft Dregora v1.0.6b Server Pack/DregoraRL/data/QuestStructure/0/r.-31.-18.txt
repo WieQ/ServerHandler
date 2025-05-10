@@ -1,0 +1,15 @@
+VillageMarketplace,-16266,-16252,-9420,-9406
+RLCraft_Vineyard,-16264,-16236,-9450,-9430
+VillageLargeLibrary,-16289,-16269,-9420,-9401
+VillageTriplets,-16236,-16222,-9472,-9458
+P_VillageFarmhouse,-16266,-16254,-9471,-9459
+VillageWoodMill,-16297,-16284,-9450,-9434
+StoneBoulder,-16257,-16248,-9535,-9526
+RLCraft_DecentCaveSpider,-16299,-16299,-9515,-9515
+RLCraft_UndergroundRuin3,-16301,-16293,-9518,-9510
+ShrineSmallAir,-16131,-16123,-9557,-9549
+RLCraft_BasicZombie,-16283,-16283,-9600,-9600
+RLCraft_UndergroundRuin1,-16286,-16277,-9606,-9597
+UndergroundCrypt,-16312,-16284,-9644,-9630
+RLCraft_DecentSkeleton,-16185,-16185,-9625,-9625
+RLCraft_UndergroundRuin3,-16191,-16183,-9630,-9622

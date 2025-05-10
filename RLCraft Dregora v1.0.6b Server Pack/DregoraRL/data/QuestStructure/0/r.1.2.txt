@@ -1,0 +1,7 @@
+RLCraft_SmallUndergroundSkeleton,949,957,1458,1466
+RLCraft_DecentCaveSpider,1016,1016,1410,1410
+RLCraft_UndergroundRuin2,1011,1021,1408,1415
+SmallWoodenCottage1,720,726,1100,1111
+RLCraft_BasicWitch,835,835,1444,1444
+RLCraft_UndergroundRuin1,829,838,1441,1450
+RLCraft_SmallUndergroundSkeleton,720,728,1468,1476

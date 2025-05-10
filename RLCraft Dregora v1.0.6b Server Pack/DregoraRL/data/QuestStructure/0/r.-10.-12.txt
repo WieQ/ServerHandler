@@ -1,0 +1,9 @@
+RLCraft_BasicSkeleton,-5158,-5158,-6193,-6193
+RLCraft_UndergroundRuin1,-5161,-5152,-6199,-6190
+SmallWoodenCottage,-5300,-5289,-6249,-6241
+PeacefulCrypt,-5317,-5293,-6282,-6266
+SmallWoodenCottage,-5357,-5349,-6257,-6246
+RLCraft_DecentSkeleton,-5612,-5612,-6310,-6310
+RLCraft_UndergroundRuin3,-5618,-5610,-6313,-6305
+SmallWoodenCottage2,-5490,-5482,-6397,-6389
+ThreeTowers,-5605,-5573,-6454,-6423

@@ -1,0 +1,7 @@
+RLCraft_UndergroundFarm,1948,1991,-989,-947
+RLCraft_UndergroundFarm,1848,1891,-975,-933
+RLCraft_DecentSpider,1856,1856,-880,-880
+RLCraft_UndergroundRuin2,1851,1861,-882,-875
+FallenPalmTree,1736,1740,-987,-977
+StonePlantMound,1573,1578,-866,-861
+WoodThorn,1559,1570,-858,-847

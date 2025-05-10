@@ -1,0 +1,5 @@
+P_SpookyHouse,2378,2418,1511,1537
+WoodWallRemains,2452,2460,1518,1546
+DinosaurSkull,2114,2125,1210,1229
+RLCraft_SmallUndergroundSkeleton,2101,2109,1187,1195
+OldWatchtower,2186,2199,1368,1380

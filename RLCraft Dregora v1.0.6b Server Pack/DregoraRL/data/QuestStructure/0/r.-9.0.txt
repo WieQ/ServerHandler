@@ -1,0 +1,5 @@
+StonePlantMound4,-4619,-4612,-180,-173
+RLCraft_DecentSpider,-4619,-4619,-192,-192
+RLCraft_UndergroundRuin2,-4621,-4614,-197,-187
+RLCraft_SmallUndergroundSkeleton,-4631,-4623,-179,-171
+JokerTower,-4687,-4679,-202,-194

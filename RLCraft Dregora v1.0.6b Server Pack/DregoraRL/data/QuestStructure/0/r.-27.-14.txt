@@ -1,0 +1,11 @@
+RLCraft_DecentSpider,-13893,-13893,-7281,-7281
+RLCraft_UndergroundRuin2,-13898,-13888,-7286,-7279
+StonePlantBoulder,-14103,-14093,-7348,-7338
+P_WizardTower,-14097,-14067,-7369,-7339
+StonePlantMound1,-14200,-14194,-7236,-7230
+StonePlantMound2,-14267,-14254,-7407,-7395
+MysticalTree1,-14265,-14252,-7200,-7189
+StonePlantMound3,-14307,-14298,-7237,-7226
+StonePlantMound,-14330,-14325,-7316,-7311
+RLCraft_DecentZombie,-14317,-14317,-7398,-7398
+RLCraft_UndergroundRuin2,-14319,-14312,-7403,-7393

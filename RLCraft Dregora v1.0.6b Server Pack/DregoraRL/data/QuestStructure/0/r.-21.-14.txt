@@ -1,0 +1,10 @@
+RLCraft_DecentSkeleton,-11066,-11066,-7642,-7642
+RLCraft_UndergroundRuin3,-11072,-11064,-7645,-7637
+RLCraft_DecentWitch,-10991,-10991,-7592,-7592
+RLCraft_UndergroundRuin2,-10996,-10986,-7594,-7587
+ShrineSmallAir,-11267,-11259,-7264,-7256
+RLCraft_DecentZombie,-11260,-11260,-7391,-7391
+RLCraft_UndergroundRuin2,-11262,-11255,-7396,-7386
+StonePlantMound1,-11207,-11201,-7177,-7171
+StonePlantMound1,-11162,-11156,-7188,-7182
+StoneBoulder,-11158,-11149,-7198,-7189

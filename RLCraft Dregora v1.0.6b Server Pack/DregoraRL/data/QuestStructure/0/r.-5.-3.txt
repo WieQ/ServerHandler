@@ -1,0 +1,6 @@
+RLCraft_SmallUndergroundSkeleton,-2847,-2839,-1627,-1619
+MonolythUnholy,-3024,-3010,-1747,-1733
+RLCraft_DecentSkeleton,-3030,-3030,-1767,-1767
+RLCraft_UndergroundRuin3,-3033,-3025,-1769,-1761
+RLCraft_BasicSpider,-2909,-2909,-1886,-1886
+RLCraft_UndergroundRuin1,-2912,-2903,-1889,-1880

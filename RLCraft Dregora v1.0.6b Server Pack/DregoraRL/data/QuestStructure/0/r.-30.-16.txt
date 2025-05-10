@@ -1,0 +1,3 @@
+StoneBoulder,-15396,-15387,-8360,-8351
+ShrineSmallWater,-15537,-15529,-8430,-8422
+ShrineSmallWater,-15719,-15711,-8677,-8669

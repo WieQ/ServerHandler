@@ -1,0 +1,11 @@
+RLCraft_NetherPortal1_Chiom,-453,-417,3151,3182
+StatueTemple,-533,-431,3096,3167
+RLCraft_SmallUndergroundSkeleton,89,97,3089,3097
+ShrineSmallAir,75,83,3223,3231
+RLCraft_SmallUndergroundSkeleton,-98,-90,3312,3320
+UndergroundTreeoid,262,285,3299,3325
+RLCraft_SmallUndergroundSkeleton,304,312,3123,3131
+RLCraft_PlainsWindmill,261,346,3301,3372
+RLCraft_DecentSkeleton,361,361,3174,3174
+RLCraft_UndergroundRuin3,358,366,3172,3180
+ShrineSmallAir,389,397,3234,3242

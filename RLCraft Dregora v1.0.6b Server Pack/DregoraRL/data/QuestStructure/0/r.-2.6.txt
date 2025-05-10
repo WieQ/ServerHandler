@@ -1,0 +1,9 @@
+RLCraft_UndergroundFarm,-1145,-1102,3100,3142
+RLCraft_SmallUndergroundSkeleton,-1162,-1154,3171,3179
+P_SwampHouse,-1288,-1258,3178,3220
+RLCraft_BasicCaveSpider,-1219,-1219,3256,3256
+RLCraft_UndergroundRuin1,-1222,-1213,3253,3262
+RLCraft_SmallUndergroundSkeleton,-1262,-1254,3275,3283
+RLCraft_LargeUndergroundTown,-1256,-1143,3407,3544
+RLCraft_DecentSkeleton,-1341,-1341,3422,3422
+RLCraft_UndergroundRuin2,-1346,-1336,3417,3424

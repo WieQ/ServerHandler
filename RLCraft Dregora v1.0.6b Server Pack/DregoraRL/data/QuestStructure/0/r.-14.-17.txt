@@ -1,0 +1,10 @@
+SmallAbandonedMine,-7184,-7169,-8904,-8879
+StoneBoulder,-7197,-7188,-8798,-8789
+PeacefulCrypt,-7204,-7180,-9108,-9092
+StonePlantMound4,-7202,-7195,-8782,-8775
+RLCraft_BasicCaveSpider,-7257,-7257,-8917,-8917
+RLCraft_UndergroundRuin1,-7260,-7251,-8923,-8914
+RLCraft_DecentSpider,-7275,-7275,-8934,-8934
+RLCraft_UndergroundRuin2,-7277,-7270,-8939,-8929
+BlazeSpawnerCrystal,-7479,-7473,-8813,-8807
+RLCraft_SmallUndergroundSkeleton,-7204,-7196,-9200,-9192

@@ -1,0 +1,17 @@
+RLCraft_DecentCaveSpider,-2006,-2006,2199,2199
+RLCraft_UndergroundRuin2,-2011,-2004,2194,2204
+RLCraft_BasicWitch,-1879,-1879,2121,2121
+RLCraft_UndergroundRuin1,-1882,-1873,2115,2124
+RLCraft_SmallUndergroundSkeleton,-1886,-1878,2049,2057
+MeteorSite,-1647,-1617,2294,2309
+RLCraft_SmallUndergroundSkeleton,-1623,-1615,2351,2359
+RLCraft_SmallUndergroundSkeleton,-1652,-1644,2336,2344
+DinosaurSkull,-1717,-1698,2236,2247
+RLCraft_SmallUndergroundSkeleton,-1728,-1720,2230,2238
+RLCraft_BasicSkeleton,-1705,-1705,2401,2401
+RLCraft_UndergroundRuin1,-1708,-1699,2398,2407
+BlazeSpawnerCrystal,-1705,-1699,2120,2126
+DinosaurSkeleton,-1702,-1693,2451,2497
+RLCraft_LargeUndergroundTown,-1746,-1609,2471,2584
+RLCraft_SmallUndergroundSkeleton,-1897,-1889,2471,2479
+UndergroundCrypt,-1699,-1685,2062,2090

@@ -1,0 +1,8 @@
+RLCraft_DecentWitch,708,708,-382,-382
+RLCraft_UndergroundRuin2,703,710,-387,-377
+VillageLargeLibrary,724,743,56,76
+VillageTriplets,724,738,80,94
+SeasonsGreenhouse,694,706,74,84
+VillageWoodMill,696,709,54,70
+VillageForgeLarge,664,680,91,103
+P_Village2Story,668,681,54,60

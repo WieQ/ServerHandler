@@ -1,0 +1,6 @@
+CuboneSkull,-368,-307,-1123,-1065
+ShrineSmallAir,-319,-311,-1216,-1208
+StoneLeafMound,462,469,-1312,-1303
+StonePlantBoulder,447,457,-1328,-1318
+FallenPalmTree,335,339,-1155,-1145
+StoneLeafMound,299,306,-1212,-1203

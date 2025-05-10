@@ -1,0 +1,6 @@
+RLCraft_BasicSkeleton,-2617,-2617,-1058,-1058
+RLCraft_UndergroundRuin1,-2620,-2611,-1064,-1055
+PeacefulCrypt,-2733,-2717,-1097,-1073
+P_VillageFarmhouse,-2706,-2694,-1356,-1344
+RLCraft_DecentSkeleton,-2963,-2963,-1416,-1416
+RLCraft_UndergroundRuin3,-2965,-2957,-1421,-1413

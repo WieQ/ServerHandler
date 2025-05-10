@@ -1,0 +1,10 @@
+RLCraft_DecentZombie,533,533,2927,2927
+RLCraft_UndergroundRuin3,527,535,2922,2930
+RLCraft_SmallUndergroundSkeleton,512,520,2766,2774
+RLCraft_DecentWitch,563,563,2699,2699
+RLCraft_UndergroundRuin3,560,568,2693,2701
+RLCraft_DecentSpider,513,513,2620,2620
+RLCraft_UndergroundRuin3,510,518,2618,2626
+RLCraft_DecentWitch,620,620,2632,2632
+RLCraft_UndergroundRuin2,615,625,2630,2637
+RLCraft_SmallUndergroundSkeleton,613,621,2752,2760

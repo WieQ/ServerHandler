@@ -1,0 +1,4 @@
+RLCraft_BasicWitch,-1495,-1495,1864,1864
+RLCraft_UndergroundRuin1,-1498,-1489,1858,1867
+RLCraft_SmallUndergroundSkeleton,-1506,-1498,1948,1956
+P_DesertDungeon,-1491,-1438,1931,1983

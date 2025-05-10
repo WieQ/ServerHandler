@@ -1,0 +1,8 @@
+DesertWatchtower,-8221,-8211,-8952,-8942
+RLCraft_BasicCaveSpider,-8408,-8408,-8909,-8909
+RLCraft_UndergroundRuin1,-8411,-8402,-8912,-8903
+UndergroundCultChamber,-8375,-8333,-8991,-8959
+RLCraft_SmallUndergroundSkeleton,-8330,-8322,-9028,-9020
+WoodWallRemains,-8561,-8553,-9074,-9046
+RLCraft_SmallUndergroundSkeleton,-8582,-8574,-9066,-9058
+AbandonedWoodTower,-8648,-8612,-9214,-9184

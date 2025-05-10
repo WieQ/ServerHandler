@@ -1,0 +1,20 @@
+[
+  {
+    "uuid": "da675abf-326b-43cf-8a68-46dcac30989e",
+    "name": "ShiroFenris",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "cab8eee7-21de-4756-af03-0d9eb12f5523",
+    "name": "Requenctine",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "1778b2f7-575e-475b-91f7-532751433557",
+    "name": "FeronThal",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

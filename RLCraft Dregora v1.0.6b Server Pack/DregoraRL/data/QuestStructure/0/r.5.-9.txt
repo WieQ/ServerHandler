@@ -1,0 +1,7 @@
+VillageTriplets,3042,3056,-4637,-4623
+RLCraft_DecentSpider,2918,2918,-4756,-4756
+RLCraft_UndergroundRuin3,2915,2923,-4758,-4750
+VillageGuardTower,3048,3060,-4946,-4934
+VillageTriplets,3059,3073,-4981,-4967
+VillageLargeLibrary,3021,3041,-4981,-4962
+SeasonsGreenhouse,3058,3068,-5002,-4990

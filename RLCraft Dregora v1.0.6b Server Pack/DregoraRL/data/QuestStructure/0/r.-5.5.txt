@@ -1,0 +1,3 @@
+P_LargeShip,-2569,-2551,2869,2929
+ShrineSmallWater,-2604,-2596,2826,2834
+ShrineSmallFire,-2636,-2626,2915,2925

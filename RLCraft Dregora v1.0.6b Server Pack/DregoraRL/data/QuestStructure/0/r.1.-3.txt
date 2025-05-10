@@ -1,0 +1,17 @@
+StonePlantMound3,913,922,-1567,-1556
+AbandonedWoodTower,894,924,-1639,-1603
+RLCraft_BasicCaveSpider,1007,1007,-1623,-1623
+RLCraft_UndergroundRuin1,1004,1013,-1626,-1617
+DinosaurSkeleton,817,863,-1553,-1544
+OldWatchtower,849,861,-1570,-1557
+StonePlantMound,783,788,-1632,-1627
+P_MayanTemple2,778,846,-1660,-1561
+StonePlantMound3,1017,1026,-1658,-1647
+StonePlantMound3,992,1001,-1699,-1688
+StoneLeafMound,914,921,-1737,-1728
+ShrineSmallFire,945,955,-1778,-1768
+StoneLeafMound,973,982,-1857,-1850
+StonePlantMound3,849,860,-1973,-1964
+ClayWaterMound,896,904,-1955,-1948
+StonePlantMound1,895,901,-1930,-1924
+ClayWaterMound1,966,977,-1947,-1937

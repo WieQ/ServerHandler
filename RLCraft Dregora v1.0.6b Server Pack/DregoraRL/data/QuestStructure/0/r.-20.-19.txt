@@ -1,0 +1,8 @@
+StonePlantMound1,-10276,-10270,-10064,-10058
+StonePlantMound4,-10255,-10248,-10080,-10073
+StonePlantMound1,-10271,-10265,-10170,-10164
+StoneBoulder,-10247,-10238,-10206,-10197
+RLCraft_DecentCaveSpider,-10725,-10725,-9840,-9840
+RLCraft_UndergroundRuin2,-10730,-10720,-9845,-9838
+StoneBoulder,-10672,-10663,-9833,-9824
+StoneBoulder,-10634,-10625,-9842,-9833

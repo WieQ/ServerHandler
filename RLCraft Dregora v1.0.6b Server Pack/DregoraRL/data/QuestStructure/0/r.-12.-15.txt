@@ -1,0 +1,10 @@
+SmallWoodenCottage,-6228,-6220,-7769,-7758
+RLCraft_SmallUndergroundSkeleton,-6252,-6244,-7888,-7880
+RLCraft_FriendlyOutpost,-6250,-6211,-8010,-7942
+SmallWoodenCottage,-6153,-6142,-8085,-8077
+DinosaurSkull,-6201,-6190,-8091,-8072
+RLCraft_DecentCaveSpider,-6281,-6281,-7870,-7870
+RLCraft_UndergroundRuin2,-6283,-6276,-7875,-7865
+CuboneSkull,-6385,-6324,-7978,-7920
+RLCraft_DecentSkeleton,-6239,-6239,-8168,-8168
+RLCraft_UndergroundRuin2,-6244,-6234,-8173,-8166

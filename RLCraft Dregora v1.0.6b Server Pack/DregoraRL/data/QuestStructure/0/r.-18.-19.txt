@@ -1,0 +1,6 @@
+DinosaurSkeleton,-9304,-9295,-9794,-9748
+ShrineSmallFire,-9276,-9266,-9781,-9771
+DinosaurSkeleton,-9632,-9586,-9748,-9739
+MeteorSite,-9469,-9454,-9861,-9831
+RLCraft_BasicSkeleton,-9641,-9641,-9795,-9795
+RLCraft_UndergroundRuin1,-9647,-9638,-9798,-9789

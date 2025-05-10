@@ -1,0 +1,17 @@
+RLCraft_SmallUndergroundSkeleton,2485,2493,2089,2097
+RLCraft_SmallUndergroundSkeleton,2491,2499,2066,2074
+VillageLargeLibrary,2327,2347,2086,2105
+VillageWoodMill,2310,2326,2051,2064
+SeasonsGreenhouse,2310,2322,2070,2080
+DinosaurSkeleton,2323,2332,2026,2072
+VillageHouseRich1,2328,2349,2123,2141
+VillageTriplets,2310,2324,2123,2137
+VillageGuardTower,2310,2322,2106,2118
+RLCraft_LargeUndergroundTown,2312,2425,2033,2170
+DinosaurSkeleton,2339,2348,2180,2226
+FallenPalmTree,2375,2379,2242,2252
+RLCraft_Vineyard,2274,2302,2123,2143
+P_Village2Story,2279,2292,2086,2092
+SeasonsGreenhouse,2281,2291,2050,2062
+DinosaurSkull,2455,2474,2519,2530
+PeacefulCrypt,2215,2239,2076,2092

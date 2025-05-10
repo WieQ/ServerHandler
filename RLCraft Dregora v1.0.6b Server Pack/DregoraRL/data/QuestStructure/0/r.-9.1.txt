@@ -1,0 +1,16 @@
+RLCraft_GreatCreeper,-4615,-4615,615,615
+RLCraft_GoodSkeleton,-4615,-4615,615,615
+RLCraft_DecentCaveSpider,-4615,-4615,615,615
+RLCraft_BasicWitch,-4615,-4615,615,615
+RLCraft_BasicWitch,-4615,-4615,615,615
+StoneBoulder,-4632,-4623,552,561
+StonePlantMound,-4634,-4629,836,841
+UnnaturalCrater,-4676,-4636,616,656
+StonePlantMound2,-4685,-4672,674,686
+StonePlantMound1,-4681,-4675,812,818
+RLCraft_BasicSkeleton,-4690,-4690,767,767
+RLCraft_UndergroundRuin1,-4696,-4687,761,770
+StonePlantBoulder,-4613,-4603,891,901
+StonePlantMound3,-4670,-4659,958,967
+AbandonedWoodTower,-4657,-4627,936,972
+WoodWallRemains,-4688,-4680,994,1022

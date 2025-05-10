@@ -1,0 +1,5 @@
+RLCraft_SmallUndergroundSkeleton,2335,2343,2921,2929
+BigClockworkSite,2238,2273,2880,2925
+RLCraft_PlainsCamp,2313,2352,3014,3060
+PeacefulCrypt,2275,2291,3050,3074
+DinosaurSkeleton,2184,2193,2824,2870

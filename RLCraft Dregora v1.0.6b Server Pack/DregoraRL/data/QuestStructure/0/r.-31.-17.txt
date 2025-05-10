@@ -1,0 +1,5 @@
+RLCraft_BasicSpider,-15931,-15931,-8933,-8933
+RLCraft_UndergroundRuin1,-15937,-15928,-8936,-8927
+StonePlantMound4,-16017,-16010,-8971,-8964
+StoneLeafMound,-15892,-15885,-9135,-9126
+StonePlantMound1,-15881,-15875,-9183,-9177

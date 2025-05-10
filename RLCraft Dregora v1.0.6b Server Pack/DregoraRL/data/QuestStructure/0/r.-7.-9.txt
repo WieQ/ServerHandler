@@ -1,0 +1,5 @@
+PeacefulCrypt,-3994,-3978,-4794,-4770
+RLCraft_SmallUndergroundSkeleton,-3953,-3945,-4794,-4786
+ShrineSmallFire,-3934,-3924,-4651,-4641
+RLCraft_LargeUndergroundTown,-3997,-3860,-4921,-4808
+Flagship,-4030,-3987,-5135,-5020

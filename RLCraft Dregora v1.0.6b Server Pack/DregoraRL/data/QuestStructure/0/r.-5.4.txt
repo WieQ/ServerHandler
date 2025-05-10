@@ -1,0 +1,6 @@
+P_SwampHouse,-2697,-2655,2379,2409
+RLCraft_DecentWitch,-3020,-3020,2269,2269
+RLCraft_UndergroundRuin2,-3025,-3015,2264,2271
+P_DesertTemple,-3048,-2998,2280,2329
+SpiderPit,-3047,-3038,2211,2221
+SpiderPit,-3072,-3062,2296,2305

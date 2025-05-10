@@ -1,0 +1,7 @@
+StonePlantMound,-10841,-10836,-10006,-10001
+StoneBoulder,-10887,-10878,-10070,-10061
+RLCraft_DecentZombie,-10861,-10861,-9881,-9881
+RLCraft_UndergroundRuin2,-10866,-10856,-9883,-9876
+ShrineSmallAir,-10930,-10922,-9750,-9742
+RLCraft_DecentSpider,-10953,-10953,-9934,-9934
+RLCraft_UndergroundRuin3,-10955,-10947,-9939,-9931

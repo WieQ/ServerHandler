@@ -1,0 +1,1 @@
+BlazeSpawnerCrystal,866,872,571,577

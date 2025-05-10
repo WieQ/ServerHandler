@@ -1,0 +1,6 @@
+ShrineSmallWater,912,920,-759,-751
+ShrineSmallFire,932,942,-761,-751
+StonePlantMound3,624,633,-802,-791
+StoneBoulder,596,605,-836,-827
+P_SmallShip,1013,1019,-591,-571
+ShrineSmallFire,754,764,-696,-686

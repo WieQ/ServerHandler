@@ -1,0 +1,6 @@
+RLCraft_BasicCaveSpider,-14409,-14409,-7595,-7595
+RLCraft_UndergroundRuin1,-14412,-14403,-7598,-7589
+StonePlantMound1,-14534,-14528,-7488,-7482
+AbandonedWoodTower,-14566,-14536,-7432,-7396
+MysticalTree2,-14571,-14561,-7496,-7486
+StonePlantBoulder,-14583,-14573,-7491,-7481

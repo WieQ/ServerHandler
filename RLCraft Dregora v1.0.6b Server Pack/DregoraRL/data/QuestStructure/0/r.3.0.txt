@@ -1,0 +1,17 @@
+DinosaurSkeleton,1919,1928,-51,-5
+DinosaurSkeleton,2024,2070,167,176
+DinosaurSkeleton,1967,2013,251,260
+RLCraft_DecentWitch,1900,1900,254,254
+RLCraft_UndergroundRuin2,1898,1905,249,259
+RLCraft_BasicWitch,1799,1799,-14,-14
+RLCraft_UndergroundRuin1,1793,1802,-20,-11
+RLCraft_DesertTown,1674,1740,-89,-23
+RLCraft_DecentCaveSpider,1548,1548,221,221
+RLCraft_UndergroundRuin3,1542,1550,218,226
+RLCraft_DecentWitch,1550,1550,-106,-106
+RLCraft_UndergroundRuin3,1545,1553,-112,-104
+RLCraft_DecentCaveSpider,1553,1553,-196,-196
+RLCraft_UndergroundRuin2,1548,1558,-201,-194
+UndergroundCultChamber,1598,1630,-266,-224
+RLCraft_BasicCaveSpider,1680,1680,-422,-422
+RLCraft_UndergroundRuin1,1677,1686,-425,-416

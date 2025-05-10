@@ -1,0 +1,7 @@
+StonePlantBoulder,-6062,-6052,-7186,-7176
+StonePlantMound1,-6080,-6074,-7201,-7195
+StonePlantMound,-6063,-6058,-7214,-7209
+RLCraft_SmallUndergroundSkeleton,-6027,-6019,-7236,-7228
+RLCraft_SmallUndergroundSkeleton,-6145,-6137,-7360,-7352
+ShrineSmallFire,-6106,-6096,-7359,-7349
+RLCraft_SmallTown,-6179,-6108,-7591,-7516

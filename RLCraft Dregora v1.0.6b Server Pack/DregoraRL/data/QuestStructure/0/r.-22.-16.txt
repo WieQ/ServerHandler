@@ -1,0 +1,4 @@
+MeteorSite,-11300,-11270,-8248,-8233
+RLCraft_SmallUndergroundSkeleton,-11301,-11293,-8254,-8246
+DinosaurSkeleton,-11293,-11284,-8643,-8597
+DinosaurSkeleton,-11308,-11299,-8509,-8463

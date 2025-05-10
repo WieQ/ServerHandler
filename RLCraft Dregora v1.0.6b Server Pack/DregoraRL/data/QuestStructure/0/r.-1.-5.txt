@@ -1,0 +1,8 @@
+StonePlantBoulder,-674,-664,-2849,-2839
+VillageChurch,-713,-687,-2978,-2966
+RLCraft_Vineyard,-720,-692,-3013,-2993
+RLCraft_DecentSpider,-734,-734,-3015,-3015
+RLCraft_UndergroundRuin3,-737,-729,-3017,-3009
+SeasonsGreenhouse,-684,-674,-3004,-2992
+VillageTriplets,-665,-651,-3004,-2990
+StoneBoulder,-596,-587,-2764,-2755

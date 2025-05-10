@@ -1,0 +1,7 @@
+MeteorSite,-4074,-4044,-539,-524
+StonePlantBoulder,-3953,-3943,-602,-592
+StonePlantBoulder,-4031,-4021,-657,-647
+P_RuinedHouse,-4091,-4074,-679,-654
+TribalJungleHead,-4036,-4026,-962,-952
+DinosaurSkeleton,-4117,-4071,-914,-905
+StonePlantMound2,-3769,-3757,-521,-508

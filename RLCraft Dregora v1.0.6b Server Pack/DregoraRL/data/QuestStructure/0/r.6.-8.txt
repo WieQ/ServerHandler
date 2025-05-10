@@ -1,0 +1,2 @@
+VillageMarketplace,3084,3098,-4602,-4588
+VillageGuardTower,3101,3113,-4602,-4590

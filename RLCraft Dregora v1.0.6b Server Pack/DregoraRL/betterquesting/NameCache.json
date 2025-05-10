@@ -1,0 +1,24 @@
+{
+  "nameCache:9": {
+    "0:10": {
+      "isOP:1": 0,
+      "uuid:8": "a2033a0c-3818-40d7-a27b-9cfb6a339250",
+      "name:8": "dawid99979"
+    },
+    "1:10": {
+      "isOP:1": 1,
+      "uuid:8": "cab8eee7-21de-4756-af03-0d9eb12f5523",
+      "name:8": "Requenctine"
+    },
+    "2:10": {
+      "isOP:1": 1,
+      "uuid:8": "da675abf-326b-43cf-8a68-46dcac30989e",
+      "name:8": "ShiroFenris"
+    },
+    "3:10": {
+      "isOP:1": 1,
+      "uuid:8": "1778b2f7-575e-475b-91f7-532751433557",
+      "name:8": "FeronThal"
+    }
+  }
+}

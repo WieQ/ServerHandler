@@ -1,0 +1,9 @@
+RLCraft_DecentSkeleton,-11888,-11888,-6142,-6142
+RLCraft_UndergroundRuin3,-11891,-11883,-6144,-6136
+StonePlantMound,-11927,-11922,-6106,-6101
+StonePlantMound,-11929,-11924,-6059,-6054
+StonePlantMound1,-12048,-12042,-6027,-6021
+StonePlantMound3,-12030,-12019,-5979,-5970
+RLCraft_DecentSkeleton,-12177,-12177,-5983,-5983
+RLCraft_UndergroundRuin3,-12183,-12175,-5988,-5980
+StonePlantMound4,-12261,-12254,-5883,-5876

@@ -1,0 +1,9 @@
+RLCraft_Vineyard,-8986,-8966,-9417,-9389
+VillageForgeLarge,-8974,-8958,-9434,-9422
+VillageWoodMill,-8986,-8970,-9458,-9445
+RLCraft_SmallUndergroundSkeleton,-9024,-9016,-9515,-9507
+RLCraft_DecentCaveSpider,-9063,-9063,-9309,-9309
+RLCraft_UndergroundRuin3,-9068,-9060,-9315,-9307
+RLCraft_BasicSkeleton,-9141,-9141,-9647,-9647
+RLCraft_UndergroundRuin1,-9144,-9135,-9650,-9641
+DinosaurSkull,-9197,-9186,-9417,-9398

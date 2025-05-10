@@ -1,0 +1,3 @@
+BlazeSpawnerCrystal,-4031,-4025,-5686,-5680
+MeteorSite,-4043,-4028,-5667,-5637
+P_WitchDungeon,-3974,-3957,-5685,-5651

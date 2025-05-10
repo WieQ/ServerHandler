@@ -1,0 +1,9 @@
+RLCraft_DecentWitch,-1788,-1788,2746,2746
+RLCraft_UndergroundRuin3,-1790,-1782,2741,2749
+RLCraft_SmallUndergroundSkeleton,-1860,-1852,2639,2647
+RLCraft_SmallUndergroundSkeleton,-1780,-1772,2769,2777
+RLCraft_SmallUndergroundSkeleton,-1810,-1802,2602,2610
+BlazeSpawnerCrystal,-1685,-1679,2622,2628
+RLCraft_UndergroundFarm,-1637,-1595,2602,2645
+BlazeSpawnerCrystal,-1547,-1541,2638,2644
+RLCraft_SmallUndergroundSkeleton,-1574,-1566,2666,2674

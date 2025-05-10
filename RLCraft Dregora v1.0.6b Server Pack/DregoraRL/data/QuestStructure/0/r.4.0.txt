@@ -1,0 +1,7 @@
+SmallAbandonedMine,2041,2066,6,21
+RLCraft_DecentZombie,2497,2497,84,84
+RLCraft_UndergroundRuin2,2492,2502,82,89
+DesertHut,2456,2466,71,80
+RLCraft_Lyquix,2481,2497,42,58
+RLCraft_BasicCaveSpider,2526,2526,318,318
+RLCraft_UndergroundRuin1,2520,2529,312,321

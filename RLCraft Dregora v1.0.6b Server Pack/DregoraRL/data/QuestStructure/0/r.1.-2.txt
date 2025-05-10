@@ -1,0 +1,13 @@
+WoodThornBig,970,983,-1518,-1505
+StoneBoulder,1011,1020,-1507,-1498
+PeacefulCrypt,954,970,-1478,-1454
+StonePlantMound4,964,971,-1431,-1424
+StonePlantBoulder,899,909,-1407,-1397
+StonePlantMound,874,879,-1417,-1412
+StonePlantMound,999,1004,-1371,-1366
+P_MayanTemple1,839,869,-1448,-1402
+WoodThorn,1001,1012,-1351,-1340
+StonePlantMound2,982,995,-1342,-1330
+SmallWoodenCottage1,828,839,-1473,-1467
+StonePlantMound1,816,822,-1484,-1478
+StonePlantMound,825,830,-1538,-1533

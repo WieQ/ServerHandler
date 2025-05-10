@@ -1,0 +1,4 @@
+ShrineSmallWater,-744,-736,-1858,-1850
+ShrineSmallFire,-680,-670,-1868,-1858
+RLCraft_DecentSpider,-852,-852,-1816,-1816
+RLCraft_UndergroundRuin2,-857,-847,-1821,-1814

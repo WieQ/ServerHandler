@@ -1,0 +1,13 @@
+RLCraft_SmallUndergroundSkeleton,-11099,-11091,-8653,-8645
+RLCraft_SmallTown,-11122,-11051,-8706,-8631
+WoodWallRemains,-11215,-11187,-8688,-8680
+StonePlantBoulder,-11129,-11119,-8338,-8328
+StonePlantBoulder,-11063,-11053,-8337,-8327
+StoneBoulder,-11065,-11056,-8322,-8313
+StonePlantMound1,-11071,-11065,-8220,-8214
+UnnaturalCrater,-11228,-11188,-8294,-8254
+RLCraft_DecentZombie,-10789,-10789,-8208,-8208
+RLCraft_UndergroundRuin3,-10792,-10784,-8210,-8202
+ShrineSmallWater,-10821,-10813,-8349,-8341
+P_SmallShip,-10820,-10814,-8401,-8381
+P_IslandCity,-11030,-10724,-8399,-8065

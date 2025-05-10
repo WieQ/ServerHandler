@@ -1,0 +1,4 @@
+P_VillageLibrary,-1530,-1514,1155,1174
+VillageWoodMill,-1527,-1514,1190,1206
+P_VillageFarmhouse,-1504,-1492,1190,1202
+SeasonsGreenhouse,-1493,-1481,1168,1178

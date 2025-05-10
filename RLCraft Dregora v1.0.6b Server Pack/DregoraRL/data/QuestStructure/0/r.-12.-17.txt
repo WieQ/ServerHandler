@@ -1,0 +1,8 @@
+VillageSavannaChandlery,-6378,-6367,-8721,-8711
+RLCraft_SmallUndergroundSkeleton,-6309,-6301,-8712,-8704
+DesertWatchtower,-6336,-6326,-8729,-8719
+MeteorSite,-6407,-6377,-8856,-8841
+P_DesertTemple,-6486,-6436,-8873,-8824
+MeteorSite,-6296,-6266,-8942,-8927
+RLCraft_SmallUndergroundSkeleton,-6564,-6556,-8764,-8756
+ShrineSmallFire,-6638,-6628,-8820,-8810

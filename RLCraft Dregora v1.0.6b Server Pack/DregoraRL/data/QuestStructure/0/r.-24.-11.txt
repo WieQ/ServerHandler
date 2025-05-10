@@ -1,0 +1,9 @@
+StonePlantMound3,-12308,-12299,-5784,-5773
+ClayWaterMound1,-12397,-12386,-5742,-5732
+StonePlantMound1,-12411,-12405,-5742,-5736
+StoneBoulder,-12439,-12430,-5700,-5691
+StonePlantMound2,-12430,-12417,-5707,-5695
+ShrineSmallWater,-12447,-12439,-5887,-5879
+StoneBoulder,-12462,-12453,-5701,-5692
+P_SmallShip,-12576,-12556,-5725,-5719
+P_AncientTeleporter,-12749,-12714,-5965,-5932

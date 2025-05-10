@@ -1,0 +1,9 @@
+SmallWoodenCottage,1788,1799,1844,1852
+BrickHenge,1902,1918,1824,1840
+RLCraft_DesertTown,1587,1653,2010,2076
+MysticalTree,1913,1929,1804,1819
+RLCraft_DecentZombie,1931,1931,1567,1567
+RLCraft_UndergroundRuin3,1925,1933,1564,1572
+RLCraft_BasicCaveSpider,1963,1963,1774,1774
+RLCraft_UndergroundRuin1,1957,1966,1771,1780
+SmallFortRuinsJapanese,1967,2013,1741,1787

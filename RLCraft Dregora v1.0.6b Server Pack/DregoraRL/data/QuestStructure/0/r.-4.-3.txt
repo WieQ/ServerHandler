@@ -1,0 +1,8 @@
+SmallFortRuins,-2094,-2062,-1716,-1686
+WoodWallRemains,-2076,-2068,-1683,-1655
+SmallAbandonedOutpost,-2320,-2290,-1861,-1839
+SmallOutpost,-2334,-2312,-1907,-1877
+MeteorSite,-2278,-2263,-1911,-1881
+UndergroundTreeoid,-2194,-2171,-1893,-1867
+SmallWoodenCottage2,-2310,-2302,-1965,-1957
+SmallWoodenCottage,-2230,-2219,-1959,-1951

@@ -1,0 +1,3 @@
+StonePlantMound,-2851,-2846,-703,-698
+StoneBoulder,-2866,-2857,-745,-736
+P_AncientTeleporter,-2692,-2657,-730,-697

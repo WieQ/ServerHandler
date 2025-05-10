@@ -1,0 +1,4 @@
+RLCraft_DecentZombie,3082,3082,-2587,-2587
+RLCraft_UndergroundRuin3,3077,3085,-2593,-2585
+RLCraft_SmallUndergroundSkeleton,3143,3151,-2951,-2943
+BigClockworkSite,3140,3185,-3068,-3033

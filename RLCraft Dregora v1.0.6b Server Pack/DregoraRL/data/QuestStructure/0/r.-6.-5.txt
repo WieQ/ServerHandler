@@ -1,0 +1,7 @@
+RLCraft_SmallUndergroundSkeleton,-3387,-3379,-2594,-2586
+P_WizardTower,-3415,-3385,-2669,-2639
+RLCraft_DecentSkeleton,-3244,-3244,-2890,-2890
+RLCraft_UndergroundRuin3,-3250,-3242,-2895,-2887
+SmallAbandonedMine,-3266,-3251,-2987,-2962
+SmallOutpost,-3142,-3120,-2913,-2883
+ShrineSmallFire,-3260,-3250,-3067,-3057

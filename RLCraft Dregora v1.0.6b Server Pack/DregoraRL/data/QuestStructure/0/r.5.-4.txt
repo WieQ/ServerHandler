@@ -1,0 +1,13 @@
+StoneLeafMound,2567,2576,-2052,-2045
+RLCraft_BasicSkeleton,2739,2739,-2100,-2100
+RLCraft_UndergroundRuin1,2733,2742,-2103,-2094
+RLCraft_BasicSpider,2661,2661,-2228,-2228
+RLCraft_UndergroundRuin1,2658,2667,-2231,-2222
+SmallClockworkSite,2838,2857,-2183,-2161
+SpiderPit,2782,2791,-2283,-2273
+RLCraft_DecentCaveSpider,2753,2753,-2337,-2337
+RLCraft_UndergroundRuin3,2750,2758,-2343,-2335
+RLCraft_SmallUndergroundSkeleton,2770,2778,-2409,-2401
+ShrineSmallFire,2973,2983,-2192,-2182
+RLCraft_DecentSpider,2778,2778,-2433,-2433
+RLCraft_UndergroundRuin3,2776,2784,-2438,-2430

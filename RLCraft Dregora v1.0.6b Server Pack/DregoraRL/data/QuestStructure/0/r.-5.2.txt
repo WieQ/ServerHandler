@@ -1,0 +1,15 @@
+RLCraft_DecentSkeleton,-3058,-3058,1066,1066
+RLCraft_UndergroundRuin2,-3060,-3053,1061,1071
+UndergroundTreeoid,-2827,-2804,1019,1045
+StonePlantBoulder,-2572,-2562,1479,1489
+RLCraft_DecentCaveSpider,-2852,-2852,1084,1084
+RLCraft_UndergroundRuin2,-2857,-2847,1082,1089
+WoodWallRemains,-2882,-2854,1323,1331
+ShrineSmallAir,-2927,-2919,1303,1311
+RLCraft_BasicCaveSpider,-2906,-2906,1280,1280
+RLCraft_UndergroundRuin1,-2909,-2900,1274,1283
+SmallWoodenCottage2,-2839,-2831,1181,1189
+RLCraft_BasicZombie,-2637,-2637,1324,1324
+RLCraft_UndergroundRuin1,-2640,-2631,1318,1327
+RLCraft_BasicSpider,-3036,-3036,1156,1156
+RLCraft_UndergroundRuin1,-3039,-3030,1153,1162

@@ -1,0 +1,4 @@
+ShrineSmallAir,-4632,-4624,1334,1342
+RLCraft_BasicCaveSpider,-4710,-4710,1318,1318
+RLCraft_UndergroundRuin1,-4713,-4704,1315,1324
+StonePlantMound1,-4707,-4701,1407,1413

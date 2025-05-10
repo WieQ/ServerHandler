@@ -1,0 +1,6 @@
+ShrineSmallFire,-1596,-1586,1701,1711
+RLCraft_SmallUndergroundSkeleton,-1738,-1730,1770,1778
+RLCraft_SmallUndergroundSkeleton,-1792,-1784,1819,1827
+RLCraft_PlainsCamp,-1787,-1741,1947,1986
+RLCraft_DecentCaveSpider,-1703,-1703,1994,1994
+RLCraft_UndergroundRuin3,-1709,-1701,1991,1999

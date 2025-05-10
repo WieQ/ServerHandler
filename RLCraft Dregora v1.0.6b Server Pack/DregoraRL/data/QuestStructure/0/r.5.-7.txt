@@ -1,0 +1,9 @@
+P_LargeShip,3047,3065,-3625,-3565
+StoneMazePath,2793,2795,-4095,-4093
+StoneMazePath,2790,2792,-4095,-4093
+StoneMazeEndChest,2775,2777,-4095,-4093
+StoneMazePath,2796,2798,-4095,-4093
+StoneMazePath,2787,2789,-4095,-4093
+StoneMazePath,2799,2801,-4095,-4093
+StoneMazeSpiderRoom,2760,2765,-4098,-4093
+StoneMazePath,2772,2774,-4095,-4093

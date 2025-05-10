@@ -1,0 +1,11 @@
+RLCraft_DecentZombie,3082,3082,-2220,-2220
+RLCraft_UndergroundRuin2,3077,3084,-2225,-2215
+StoneLeafMound,3120,3129,-2225,-2218
+DinosaurSkeleton,3116,3125,-2253,-2207
+RLCraft_DecentSkeleton,3353,3353,-2505,-2505
+RLCraft_UndergroundRuin3,3350,3358,-2511,-2503
+RLCraft_BasicZombie,3276,3276,-2284,-2284
+RLCraft_UndergroundRuin1,3270,3279,-2287,-2278
+RLCraft_DesertTown,3304,3370,-2430,-2364
+DesertBeacon,3417,3423,-2430,-2424
+RLCraft_SmallUndergroundSkeleton,3458,3466,-2492,-2484

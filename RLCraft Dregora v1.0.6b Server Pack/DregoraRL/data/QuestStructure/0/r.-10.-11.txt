@@ -1,0 +1,5 @@
+ShrineSmallFire,-5148,-5138,-5956,-5946
+PeacefulCrypt,-5239,-5215,-6022,-6006
+SmallAbandonedMine,-5269,-5244,-6030,-6015
+DinosaurSkull,-5329,-5310,-6031,-6020
+RLCraft_SmallUndergroundSkeleton,-5568,-5560,-6133,-6125

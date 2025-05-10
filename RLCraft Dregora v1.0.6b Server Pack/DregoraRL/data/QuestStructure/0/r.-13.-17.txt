@@ -1,0 +1,11 @@
+UndergroundTreeoid,-6793,-6767,-9055,-9032
+RLCraft_BasicZombie,-6677,-6677,-8949,-8949
+RLCraft_UndergroundRuin1,-6680,-6671,-8952,-8943
+ShrineSmallFire,-6796,-6786,-8815,-8805
+RLCraft_DecentSpider,-6926,-6926,-9086,-9086
+RLCraft_UndergroundRuin2,-6928,-6921,-9091,-9081
+RLCraft_DecentSpider,-6953,-6953,-9017,-9017
+RLCraft_UndergroundRuin2,-6958,-6948,-9019,-9012
+StonePlantMound3,-7057,-7048,-8795,-8784
+PeacefulCrypt,-7092,-7068,-9011,-8995
+StonePlantMound3,-7163,-7152,-8840,-8831

@@ -1,0 +1,13 @@
+BigClockworkSite,-1926,-1881,977,1012
+RLCraft_SmallUndergroundSkeleton,-1851,-1843,930,938
+RLCraft_DecentSpider,-1866,-1866,920,920
+RLCraft_UndergroundRuin3,-1872,-1864,915,923
+P_DesertTemple,-1787,-1738,904,954
+MeteorSite,-1715,-1700,893,923
+P_DesertTemple,-1966,-1917,854,904
+RLCraft_SmallUndergroundSkeleton,-1724,-1716,794,802
+RLCraft_UndergroundFarm,-1717,-1674,717,759
+ShrineSmallFire,-1949,-1939,742,752
+BigClockworkSite,-1751,-1706,556,591
+RLCraft_BasicWitch,-1584,-1584,640,640
+RLCraft_UndergroundRuin1,-1590,-1581,637,646

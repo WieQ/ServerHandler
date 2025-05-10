@@ -1,0 +1,17 @@
+RLCraft_BasicSkeleton,2768,2768,-716,-716
+RLCraft_UndergroundRuin1,2762,2771,-722,-713
+AbandonedWoodTower,2775,2805,-789,-753
+StoneBoulder,2782,2791,-683,-674
+RLCraft_DecentSkeleton,2672,2672,-926,-926
+RLCraft_UndergroundRuin2,2667,2677,-931,-924
+RLCraft_DecentSpider,2780,2780,-910,-910
+RLCraft_UndergroundRuin3,2775,2783,-912,-904
+RLCraft_DecentSpider,2751,2751,-893,-893
+RLCraft_UndergroundRuin2,2746,2756,-895,-888
+StonePlantMound2,2727,2740,-605,-593
+PeacefulCrypt,2665,2681,-615,-591
+StonePlantMound4,3003,3010,-889,-882
+StonePlantMound2,3015,3027,-870,-857
+StonePlantMound1,3026,3032,-894,-888
+StonePlantMound4,3029,3036,-869,-862
+RLCraft_SmallUndergroundSkeleton,2950,2958,-954,-946

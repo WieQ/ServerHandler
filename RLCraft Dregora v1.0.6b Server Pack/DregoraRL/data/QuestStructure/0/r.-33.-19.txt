@@ -1,0 +1,10 @@
+StoneLeafMound,-17125,-17118,-10244,-10235
+StonePlantMound,-17380,-17375,-10227,-10222
+StonePlantMound1,-17321,-17315,-10193,-10187
+StonePlantMound,-17302,-17297,-10199,-10194
+RLCraft_BasicSpider,-17287,-17287,-10198,-10198
+RLCraft_UndergroundRuin1,-17293,-17284,-10204,-10195
+StonePlantBoulder,-17243,-17233,-10174,-10164
+RLCraft_DecentSpider,-17251,-17251,-10163,-10163
+RLCraft_UndergroundRuin2,-17256,-17246,-10165,-10158
+StoneBoulder,-17341,-17332,-10050,-10041

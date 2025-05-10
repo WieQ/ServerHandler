@@ -1,0 +1,7 @@
+MonolythHoly,1992,2006,1033,1047
+StonePlantMound3,1870,1879,1147,1158
+P_WitchDungeon,1915,1932,1344,1378
+RLCraft_DecentSkeleton,1997,1997,1305,1305
+RLCraft_UndergroundRuin3,1992,2000,1303,1311
+RLCraft_DecentCaveSpider,1886,1886,1324,1324
+RLCraft_UndergroundRuin2,1881,1891,1319,1326

@@ -1,0 +1,3 @@
+ShrineSmallFire,3107,3117,-3210,-3200
+SmallClockworkSite,3259,3278,-3281,-3259
+RLCraft_UndergroundFarm,3198,3240,-3399,-3356

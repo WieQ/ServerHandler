@@ -1,0 +1,16 @@
+RLCraft_DecentCaveSpider,-3046,-3046,856,856
+RLCraft_UndergroundRuin2,-3048,-3041,851,861
+SmallAbandonedMine,-2898,-2883,796,821
+RLCraft_BasicSpider,-2974,-2974,723,723
+RLCraft_UndergroundRuin1,-2980,-2971,717,726
+SmallFortRuins,-2957,-2927,711,743
+P_WizardTower,-2918,-2888,680,710
+SmallWoodenCottage2,-2831,-2823,671,679
+RLCraft_DecentSpider,-2826,-2826,814,814
+RLCraft_UndergroundRuin2,-2831,-2821,809,816
+RLCraft_BasicSkeleton,-2707,-2707,722,722
+RLCraft_UndergroundRuin1,-2710,-2701,719,728
+MeteorSite,-2648,-2633,645,675
+RLCraft_BasicWitch,-2637,-2637,715,715
+RLCraft_UndergroundRuin1,-2643,-2634,709,718
+ShrineSmallFire,-2633,-2623,874,884

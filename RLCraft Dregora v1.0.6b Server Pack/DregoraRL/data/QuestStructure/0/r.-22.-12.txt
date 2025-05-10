@@ -1,0 +1,11 @@
+P_LargeShip,-11451,-11391,-6495,-6477
+ShrineSmallFire,-11526,-11516,-6456,-6446
+RLCraft_AgentStarbuck_WaterBase,-11641,-11624,-6519,-6507
+RLCraft_BasicSkeleton,-11627,-11627,-6333,-6333
+RLCraft_UndergroundRuin1,-11630,-11621,-6336,-6327
+ShrineSmallAir,-11610,-11602,-6315,-6307
+StonePlantMound4,-11643,-11636,-6184,-6177
+RLCraft_DecentZombie,-11427,-11427,-6327,-6327
+RLCraft_UndergroundRuin2,-11432,-11422,-6329,-6322
+RLCraft_BasicZombie,-11405,-11405,-6285,-6285
+RLCraft_UndergroundRuin1,-11408,-11399,-6288,-6279

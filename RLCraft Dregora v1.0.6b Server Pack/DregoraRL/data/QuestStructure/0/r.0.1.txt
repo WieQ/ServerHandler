@@ -1,0 +1,5 @@
+RLCraft_SmallUndergroundSkeleton,-406,-398,934,942
+RLCraft_BasicSkeleton,-257,-257,873,873
+RLCraft_UndergroundRuin1,-260,-251,867,876
+ShrineSmallFire,313,323,867,877
+P_LargeShip,229,289,822,840

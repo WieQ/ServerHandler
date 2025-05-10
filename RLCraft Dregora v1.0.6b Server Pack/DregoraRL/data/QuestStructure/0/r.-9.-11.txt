@@ -1,0 +1,12 @@
+StonePlantMound,-4712,-4707,-5950,-5945
+RLCraft_BasicZombie,-4716,-4716,-5870,-5870
+RLCraft_UndergroundRuin1,-4722,-4713,-5873,-5864
+SpiderPit,-4827,-4817,-5935,-5926
+UndergroundTreeoid,-4889,-4863,-5757,-5734
+P_DesertDungeon,-5015,-4962,-5755,-5703
+DesertBeacon,-5050,-5044,-5711,-5705
+RLCraft_SmallUndergroundSkeleton,-5040,-5032,-5756,-5748
+AbandonedWoodTower,-4995,-4965,-5980,-5944
+AbandonedWoodTower,-5033,-4997,-5887,-5857
+WoodWallRemains,-5115,-5087,-6104,-6096
+SmallWoodenCottage1,-4951,-4945,-6133,-6122
