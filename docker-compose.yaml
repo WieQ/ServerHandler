@@ -1,28 +1,26 @@
-version: '3.8'
+version: "3.9"
 
 services:
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
+    volumes:
+      - ./frontend:/app
     ports:
-      - "8080:80"  # Frontend jest dostępny na porcie 8080
-    depends_on:
-      - backend
-    networks:
-      - app-network
+      - "5173:5173"
 
-  backend:
-    build:
-      context: ./backend
-      dockerfile: Dockerfile
-    ports:
-      - "5000:5000"  # Backend jest dostępny na porcie 5000
     environment:
-      - FLASK_RUN_HOST=0.0.0.0  # Flask będzie nasłuchiwał na wszystkich interfejsach
-    networks:
-      - app-network
+      - CHOKIDAR_USEPOLLING=true
 
-networks:
-  app-network:
-    driver: bridge
+
+#  backend:
+#    build:
+#      context: ./backend
+#      dockerfile: Dockerfile
+#    ports:
+#      - "5000:5000"  # Backend jest dostępny na porcie 5000
+#    environment:
+#      - FLASK_RUN_HOST=0.0.0.0  # Flask będzie nasłuchiwał na wszystkich interfejsach
+#    networks:
+#      - app-network

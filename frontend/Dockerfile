@@ -1,15 +1,20 @@
-# Etap 1: budowanie frontendu
-FROM node:20-alpine AS builder
+# Etap dev - frontend z hot reloadem
+FROM node:20-alpine
+
 WORKDIR /app
 
+# Kopiujemy package.json i package-lock.json
 COPY package*.json ./
+
+# Instalujemy zależności
 RUN npm install
 
+# Kopiujemy resztę plików
 COPY . .
-RUN npm run build
 
-# Etap 2: serwowanie przez nginx
-FROM nginx:alpine
-COPY --from=builder /app/dist /usr/share/nginx/html
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+# Włączamy hot reload z pollingiem (np. dla WSL2)
+ENV CHOKIDAR_USEPOLLING=true
+
+EXPOSE 5173
+
+CMD ["npm", "run", "dev", "--", "--host"]
