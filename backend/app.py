@@ -82,6 +82,22 @@ def stop_server_process():
     
     return False
 
+def restart_server_periodically():
+    while server_restart_enabled:
+        if is_process_running(server_process) or find_running_process():
+            logging.info("Restartowanie serwera...")
+            stop_server_process()
+            start_server_process()
+            logging.info("Serwer uruchomiony ponownie.")
+        else:
+            logging.info("Serwer nie działa. Nie wykonuję restartu.")
+        
+        time.sleep(restart_seconds)  # Czekaj na następny restart tylko, gdy serwer został uruchomiony
+
+def is_restart_thread_alive():
+    # Sprawdzenie, czy wątek restartu serwera jest wciąż aktywny
+    return restart_thread.is_alive() if 'restart_thread' in globals() else False
+
 @app.route('/start-server', methods=['POST'])
 def start_server():
     global server_process
@@ -129,20 +145,12 @@ def get_logs():
     except Exception as e:
         return jsonify({"message": f"Błąd przy odczycie logów: {str(e)}"}), 500
 
-
-def restart_server_periodically():
-    while server_restart_enabled:
-        if is_process_running(server_process) or find_running_process():
-            logging.info("Restartowanie serwera...")
-            stop_server_process()
-            start_server_process()
-            logging.info("Serwer uruchomiony ponownie.")
-        else:
-            logging.info("Serwer nie działa. Nie wykonuję restartu.")
-        
-        time.sleep(restart_seconds)  # Czekaj na następny restart tylko, gdy serwer został uruchomiony
-
-
+@app.route('/restart-thread-status', methods=['GET'])
+def restart_thread_status():
+    if is_restart_thread_alive():
+        return jsonify({"status": "wątek restartu jest aktywny"}), 200
+    else:
+        return jsonify({"status": "wątek restartu nie działa"}), 200
 
 @app.route('/set-restart-server', methods=['POST'])
 def set_restart_server():
