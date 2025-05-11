@@ -14,13 +14,11 @@ services:
       - CHOKIDAR_USEPOLLING=true
 
 
-#  backend:
-#    build:
-#      context: ./backend
-#      dockerfile: Dockerfile
-#    ports:
-#      - "5000:5000"  # Backend jest dostępny na porcie 5000
-#    environment:
-#      - FLASK_RUN_HOST=0.0.0.0  # Flask będzie nasłuchiwał na wszystkich interfejsach
-#    networks:
-#      - app-network
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"  # Backend jest dostępny na porcie 5000
+    environment:
+      - FLASK_RUN_HOST=0.0.0.0  # Flask będzie nasłuchiwał na wszystkich interfejsach

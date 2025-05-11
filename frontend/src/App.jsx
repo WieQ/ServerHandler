@@ -27,15 +27,6 @@ export default function App() {
     setBackups(testBackups);
   }, []);
 
-  // Logi co 3 sekundy
-  useEffect(() => {
-    const logInterval = setInterval(() => {
-      const newLog = `Log systemowy - ${new Date().toLocaleTimeString()}`;
-      setLogs((prevLogs) => [...prevLogs, newLog]);
-    }, 3000);
-    return () => clearInterval(logInterval);
-  }, []);
-
   // Aktualizacja statusu serwera co 5s
   useEffect(() => {
     const fetchStatus = () => {
@@ -48,6 +39,20 @@ export default function App() {
     const interval = setInterval(fetchStatus, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  // Ustanawianie połączenia z backendem, aby odbierać logi w czasie rzeczywistym
+  useEffect(() => {
+    const fetchLogs = () => {
+      fetch('http://localhost:5000/get-logs')
+        .then((res) => res.json())
+        .then((data) => setLogs((prev) => [...prev, data.logs])); // Spread to add each log individually
+    };
+
+    fetchLogs();
+    const interval = setInterval(fetchLogs, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
 
   const handleStartServer = () => {
     fetch('http://localhost:5000/start-server', { method: 'POST' })
@@ -128,7 +133,7 @@ export default function App() {
               <button
                 className="btn small-btn"
                 onClick={() => {
-                  fetch('http://localhost:5000/set-auto-restart', {
+                  fetch('http://localhost:5000/set-restart-server', {
                     method: 'POST',
                     body: JSON.stringify({
                       enable: autoRestart,

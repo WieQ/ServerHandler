@@ -181,16 +181,20 @@ header {
 .log-list {
   font-size: 0.8rem;
   max-height: 600px;
-  max-width: 800px;
+  max-width: 1000px;
   height: 600px;
-  width: 800px;
+  width: 1000px;
   background-color: #ffffff;
   color: #000;
   overflow-y: auto;
   padding-right: 1rem;
   text-align: left;
-  list-style-type: none;
+  white-space: pre;
+  /* Zachowaj formatowanie, w tym nowe linie */
+  overflow-x: auto;
+  /* Włącza przewijanie poziome, gdy tekst jest zbyt szeroki */
 }
+
 
 input[type="checkbox"] {
   margin-right: 10px;
