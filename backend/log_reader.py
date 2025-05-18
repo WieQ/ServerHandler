@@ -21,4 +21,11 @@ class LogReader:
             # Aktualizujemy pozycję, gdzie skończyliśmy odczyt
             self.last_read_position = log_file.tell()
 
-        return new_logs  # Zwracamy linie logów
+        return [line.rstrip() for line in new_logs if line.strip()]  # Zwracamy linie logów
+
+    def read_all_logs(self):
+        if not os.path.exists(self.log_file_path):
+            return []
+
+        with open(self.log_file_path, 'r') as log_file:
+            return [line.rstrip() for line in log_file.readlines() if line.strip()]
