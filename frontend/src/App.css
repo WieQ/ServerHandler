@@ -199,3 +199,11 @@ header {
 input[type="checkbox"] {
   margin-right: 10px;
 }
+
+.danger {
+  background-color: #dc3545;
+}
+
+.danger:hover {
+  background-color: #bd2130;
+}
