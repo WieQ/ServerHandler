@@ -1,22 +1,27 @@
-import subprocess
 import psutil
 import logging
-import time
-import threading
+import asyncio
 import json
-from flask import Flask, jsonify, request, Response
-from flask_cors import CORS
+from quart import Quart, jsonify, request
+from quart_cors import cors
 from config_reader import ConfigReader
 from log_reader import LogReader
+import platform
 
-app = Flask(__name__)
-CORS(app)
+app = Quart(__name__)
+app = cors(app)
 
 # Logging
 logging.basicConfig(level=logging.DEBUG)
 
+IS_WINDOWS = platform.system() == "Windows"
+EXECUTABLE_PATH = "start.bat" if IS_WINDOWS else "./start.sh"
+
+
 EXECUTABLE_PATH = "/app/start.sh"
 server_process = None  # globalna referencja do uruchomionego procesu
+stdout_buffer = []
+restart_task = None
 
 config_file = ".config"
 config = ConfigReader(config_file)
@@ -32,16 +37,26 @@ restart_seconds = config.get_time_in_seconds("server_restart_timer", default_sec
 # Kolejka do logów
 log_queue = []
 
-def is_process_running(proc):
+async def is_process_running(proc):
     if proc is None:
         logging.info("Proces nie jest uruchomiony.")
         return False
-    elif proc.poll() is None:
-        logging.info("Proces jest nadal uruchomiony.")
-        return True
-    else:
-        logging.info("Proces zakończył działanie.")
+
+    try:
+        # Jeśli to asyncio.subprocess.Process
+        if isinstance(proc, asyncio.subprocess.Process):
+            return proc.returncode is None  # działa zamiast .poll()
+        
+        # Jeśli to psutil.Process
+        if isinstance(proc, psutil.Process):
+            return proc.is_running() and proc.status() != psutil.STATUS_ZOMBIE
+
+    except Exception as e:
+        logging.warning(f"Błąd przy sprawdzaniu procesu: {e}")
         return False
+
+    return False
+
 
 
 def find_running_process():
@@ -54,24 +69,30 @@ def find_running_process():
             continue
     return None
 
-def start_server_process():
+async def start_server_process():
     global server_process
-    if is_process_running(server_process) or find_running_process():
+    if await is_process_running(server_process) or find_running_process():
         logging.info("Serwer już działa")
         return False
+    logging.info("Próba uruchomienia")
     try:
-        server_process = subprocess.Popen([EXECUTABLE_PATH], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        server_process = await asyncio.create_subprocess_exec(
+            EXECUTABLE_PATH,
+            stdin=asyncio.subprocess.PIPE,
+            stdout=asyncio.subprocess.PIPE,
+            stderr=asyncio.subprocess.PIPE
+        )
         logging.info("Serwer został uruchomiony")
         return True
     except Exception as e:
         raise e
 
-def stop_server_process():
+async def stop_server_process():
     global server_process
 
-    if is_process_running(server_process):
+    if await is_process_running(server_process):
         server_process.terminate()
-        server_process.wait()
+        await server_process.wait()
         server_process = None
         return True
 
@@ -82,29 +103,25 @@ def stop_server_process():
     
     return False
 
-def restart_server_periodically():
+async def restart_server_periodically():
+    global server_restart_enabled
     while server_restart_enabled:
-        if is_process_running(server_process) or find_running_process():
+        if await is_process_running(server_process) or find_running_process():
             logging.info("Restartowanie serwera...")
-            stop_server_process()
-            start_server_process()
+            await stop_server_process()
+            await start_server_process()
             logging.info("Serwer uruchomiony ponownie.")
         else:
             logging.info("Serwer nie działa. Nie wykonuję restartu.")
-        
-        time.sleep(restart_seconds)  # Czekaj na następny restart tylko, gdy serwer został uruchomiony
-
-def is_restart_thread_alive():
-    # Sprawdzenie, czy wątek restartu serwera jest wciąż aktywny
-    return restart_thread.is_alive() if 'restart_thread' in globals() else False
+        await asyncio.sleep(restart_seconds)
 
 @app.route('/start-server', methods=['POST'])
-def start_server():
+async def start_server():
     global server_process
 
     logging.info("Żądanie uruchomienia serwera")
     try:
-        if start_server_process():
+        if await start_server_process():
             return jsonify({"message": "Serwer uruchomiony"}), 200
         else:
             return jsonify({"message": "Serwer już działa"}), 400
@@ -115,12 +132,12 @@ def start_server():
 
 
 @app.route('/stop-server', methods=['POST'])
-def stop_server():
+async def stop_server():
     global server_process
 
     logging.info("Żądanie zatrzymania serwera")
 
-    if stop_server_process():
+    if await stop_server_process():
         logging.info("Serwer zatrzymany")
         return jsonify({"message": "Serwer zatrzymany"}), 200
 
@@ -129,8 +146,8 @@ def stop_server():
 
 
 @app.route('/server-status', methods=['GET'])
-def server_status():
-    if is_process_running(server_process) or find_running_process():
+async def server_status():
+    if await is_process_running(server_process) or find_running_process():
         return jsonify({"status": "uruchomiony"})
     else:
         return jsonify({"status": "zatrzymany"})
@@ -145,56 +162,92 @@ def get_logs():
     except Exception as e:
         return jsonify({"message": f"Błąd przy odczycie logów: {str(e)}"}), 500
 
-@app.route('/restart-thread-status', methods=['GET'])
-def restart_thread_status():
-    if is_restart_thread_alive():
-        return jsonify({"status": "wątek restartu jest aktywny"}), 200
-    else:
-        return jsonify({"status": "wątek restartu nie działa"}), 200
+def is_restart_task_running():
+    global restart_task
+    return restart_task is not None and not restart_task.done()
+
+    
+@app.route('/send-command', methods=['POST'])
+async def send_command():
+    global server_process
+    if not is_process_running(server_process) or not find_running_process():
+        logging.info("Serwer nie działa")
+        return jsonify({"message": "Server nie działa"}), 500
+    
+    data = request.get_json()
+    command = data.get("command")
+    if not command:
+        return jsonify({"message": "Brak komendy"}), 400
+    
+    server_process.stdin.write((command+ "\n").encode())
+    await server_process.stdin.drain()
+
+@app.route('/read-terminal', methods=['POST'])
+async def read_terminal():
+    global server_process, stdout_buffer
+    if not is_process_running(server_process) or not find_running_process() or server_process.stdout.at_eof():
+        return jsonify({"logs": []})
+    
+    try:
+        while True:
+            line = await asyncio.wait_for(server_process.stdout.readline(), timeout=0.1)
+            if line:
+                stdout_buffer.append(line.decode())
+            else:
+                break
+    except asyncio.TimeoutError:
+        pass
+
+    if stdout_buffer:
+        logs = stdout_buffer.copy()
+        stdout_buffer.clear()
+        return jsonify({"logs": logs})
+    else :
+        return jsonify({"logs": []})
+
 
 @app.route('/set-restart-server', methods=['POST'])
-def set_restart_server():
+async def set_restart_server():
     global server_restart_enabled, restart_seconds
 
     try:
-        # Odbieranie danych z frontend
-        data = request.get_json()
+        data = await request.get_json()
 
         if "enable" not in data or "interval" not in data:
             return jsonify({"message": "Brak wymaganych danych"}), 400
         
-        # Ustawienie zmiennych
         server_restart_enabled = data["enable"]
-        restart_seconds = data["interval"] * 60  # Konwersja minut na sekundy
+        restart_seconds = data["interval"] * 60
 
-        # Zapisanie do pliku konfiguracyjnego
         config_data = {
             "server_restart": str(server_restart_enabled),
-            "server_restart_timer": restart_seconds // 60  # zapisanie w minutach
+            "server_restart_timer": restart_seconds // 60
         }
 
-        if server_restart_enabled and not is_restart_thread_alive():
-            # Uruchamiamy restart serwera w tle
-            restart_thread = threading.Thread(target=restart_server_periodically, daemon=True)
-            restart_thread.start()
+        if server_restart_enabled and not is_restart_task_running():
+            asyncio.create_task(restart_server_periodically())
 
         with open(config_file, 'w') as f:
             json.dump(config_data, f, indent=4)
 
-        # Aktualizacja zmiennych
         logging.info(f"Ustawiono auto-restart na {server_restart_enabled}, co {restart_seconds // 60} minut.")
-
         return jsonify({"message": "Ustawienia auto-restartu zapisane"}), 200
 
     except Exception as e:
         logging.error(f"Błąd podczas ustawiania auto-restartu: {str(e)}")
         return jsonify({"message": f"Błąd: {str(e)}"}), 500
 
+    
+@app.before_serving
+async def setup_restart_loop():
+    global restart_task
+    if server_restart_enabled and not is_restart_task_running():
+        asyncio.create_task(restart_server_periodically())
+
+
 if __name__ == '__main__':
     logging.info(f"Ustawiono auto-restart na {server_restart_enabled}, co {restart_seconds // 60} minut.")
     if server_restart_enabled:
-        # Uruchamiamy restart serwera w tle
-        restart_thread = threading.Thread(target=restart_server_periodically, daemon=True)
-        restart_thread.start()
+        asyncio.create_task(restart_server_periodically())
 
     app.run(host='0.0.0.0', port=5000)

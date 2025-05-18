@@ -6,19 +6,19 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     volumes:
-      - ./frontend:/app
+      - ./frontend:/app:cached
     ports:
       - "5173:5173"
-
     environment:
       - CHOKIDAR_USEPOLLING=true
-
 
   backend:
     build:
       context: ./backend
       dockerfile: Dockerfile
+    volumes:
+      - ./backend:/app:cached
     ports:
-      - "5000:5000"  # Backend jest dostępny na porcie 5000
-    environment:
-      - FLASK_RUN_HOST=0.0.0.0  # Flask będzie nasłuchiwał na wszystkich interfejsach
+      - "5000:5000"
+    command: ["hypercorn", "app:app", "--bind", "0.0.0.0:5000"]
+
