@@ -57,8 +57,6 @@ async def is_process_running(proc):
 
     return False
 
-
-
 def find_running_process():
     """Sprawdza, czy proces z tym samym plikiem działa."""
     for proc in psutil.process_iter(['pid', 'cmdline']):
@@ -162,6 +160,12 @@ def get_logs():
     except Exception as e:
         return jsonify({"message": f"Błąd przy odczycie logów: {str(e)}"}), 500
 
+@app.route('/get-all-logs', methods=['GET'])
+async def get_all_logs():
+    logs = log_reader.read_all_logs()
+    return jsonify({"logs": logs})
+
+
 def is_restart_task_running():
     global restart_task
     return restart_task is not None and not restart_task.done()
@@ -170,17 +174,20 @@ def is_restart_task_running():
 @app.route('/send-command', methods=['POST'])
 async def send_command():
     global server_process
-    if not is_process_running(server_process) or not find_running_process():
+    if not await is_process_running(server_process) or not find_running_process():
         logging.info("Serwer nie działa")
         return jsonify({"message": "Server nie działa"}), 500
     
-    data = request.get_json()
+    data = await request.get_json()
     command = data.get("command")
     if not command:
         return jsonify({"message": "Brak komendy"}), 400
     
-    server_process.stdin.write((command+ "\n").encode())
+    server_process.stdin.write((command + "\n").encode())
     await server_process.stdin.drain()
+    
+    return jsonify({"message": f"Komenda '{command}' została wysłana"}), 200
+
 
 @app.route('/read-terminal', methods=['POST'])
 async def read_terminal():
