@@ -41,17 +41,26 @@ export default function App() {
     setLogs(savedLogs);
   }, []);
 
-  // Inicjalizacja testowych backupów
+  // 1. Funkcja do pobierania backupów
+  const fetchBackups = () => {
+    fetch('http://localhost:5000/list-backups')
+      .then((res) => res.json())
+      .then((data) => {
+        if (Array.isArray(data.backups)) {
+          setBackups(data.backups); // <- już zawiera id, name, path
+        }
+      })
+      .catch((err) => console.error('Błąd pobierania backupów:', err));
+  };
+
+  // 2. useEffect używa tej funkcji
   useEffect(() => {
-    const testBackups = [];
-    for (let i = 1; i <= 20; i++) {
-      testBackups.push({
-        id: i,
-        name: `Backup ${i} - ${new Date().toLocaleString()}`,
-      });
+    if (activeTab === 'Backup') {
+      fetchBackups();
     }
-    setBackups(testBackups);
-  }, []);
+  }, [activeTab]);
+
+
 
   // Aktualizacja statusu serwera co 5s
   useEffect(() => {
@@ -146,10 +155,16 @@ export default function App() {
     fetch('http://localhost:5000/create-backup', { method: 'POST' })
       .then((res) => res.json())
       .then((result) => {
-        setMessage(`Backup utworzony: ${result.status || 'OK'}`);
-        setBackups((prev) => [...prev, result.newBackup]);
+        if (result.newBackup) {
+          setMessage(`Backup utworzony: ${result.newBackup.name}`);
+          setBackups((prev) => [result.newBackup, ...prev]);
+          fetchBackups()
+        } else {
+          setMessage(result.status || 'Błąd tworzenia backupu');
+        }
       });
   };
+
 
   const handleAutoBackupChange = () => {
     setAutoBackup((prevState) => {
@@ -165,6 +180,14 @@ export default function App() {
         .catch((err) => setMessage(`Błąd: ${err.message}`));
       return newAutoBackup;
     });
+  };
+
+  const handleDeleteBackup = (backupName) => {
+    setBackups((prev) => prev.filter((b) => b.name !== backupName));
+
+    fetch(`http://localhost:5000/delete-backup?id=${encodeURIComponent(backupName)}`, {
+      method: 'DELETE',
+    }).catch((err) => console.error('Błąd usuwania backupu:', err));
   };
 
   const handleClearLogs = () => {
@@ -192,11 +215,6 @@ export default function App() {
         setTerminalLogs((prev) => [...prev, `[Błąd]: ${err.message}`]);
         console.error('Błąd wysyłania komendy:', err);
       });
-  };
-
-
-  const handleLoadBackup = (backupName) => {
-    setMessage(`Wczytano backup: ${backupName}`);
   };
 
   const renderTabContent = () => {
@@ -260,12 +278,20 @@ export default function App() {
                   {backups.map((backup) => (
                     <li key={backup.id} className="backup-item">
                       <span>{backup.name}</span>
-                      <button
-                        className="btn small-btn"
-                        onClick={() => handleLoadBackup(backup.name)}
-                      >
-                        Wczytaj backup
-                      </button>
+                      <div style={{ display: 'flex', gap: '0.5rem' }}>
+                        <button
+                          className="btn small-btn"
+                          onClick={() => handleLoadBackup(backup.name)}
+                        >
+                          Wczytaj backup
+                        </button>
+                        <button
+                          className="btn small-btn danger"
+                          onClick={() => handleDeleteBackup(backup.name)} // ← poprawka
+                        >
+                          🗑 Usuń
+                        </button>
+                      </div>
                     </li>
                   ))}
                 </ul>
@@ -280,6 +306,32 @@ export default function App() {
                 />
                 Automatyczne backupy
               </label>
+              <div style={{ marginTop: '0.5rem' }}>
+                <label>
+                  Interwał backupu (w minutach):&nbsp;
+                  <input
+                    type="number"
+                    min="1"
+                    value={restartInterval}
+                    onChange={(e) => setRestartInterval(Math.max(1, parseInt(e.target.value) || 1))}
+                    style={{ width: '60px' }}
+                  />
+                </label>
+                <button
+                  className="btn small-btn"
+                  onClick={() => {
+                    fetch('http://localhost:5000/set-backup-interval', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({ interval: restartInterval }),
+                    })
+                      .then(() => setMessage('Zapisano interwał backupu'))
+                      .catch((err) => setMessage(`Błąd: ${err.message}`));
+                  }}
+                >
+                  Zapisz interwał
+                </button>
+              </div>
             </div>
             <p>{message}</p>
           </div>

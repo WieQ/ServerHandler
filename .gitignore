@@ -120,3 +120,6 @@ venv.bak/
 logs/
 backend/__pycache__/app.cpython-39.pyc
 backend/__pycache__/log_reader.cpython-39.pyc
+
+backend/Backup
+backend/DregoraRL

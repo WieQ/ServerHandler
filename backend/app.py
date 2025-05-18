@@ -2,10 +2,12 @@ import psutil
 import logging
 import asyncio
 import json
+import os
 from quart import Quart, jsonify, request
 from quart_cors import cors
 from config_reader import ConfigReader
 from log_reader import LogReader
+from backup_manager import BackupManager
 import platform
 
 app = Quart(__name__)
@@ -29,6 +31,8 @@ config = ConfigReader(config_file)
 # Ścieżka do pliku logów
 log_file_path = 'latest.log'
 log_reader = LogReader(log_file_path)
+
+backup_manager = BackupManager(source_dir='DregoraRL', backup_root='Backup')
 
 # Zmienne konfiguracyjne
 server_restart_enabled = config.get("server_restart", "False").lower() == "true"
@@ -243,6 +247,46 @@ async def set_restart_server():
     except Exception as e:
         logging.error(f"Błąd podczas ustawiania auto-restartu: {str(e)}")
         return jsonify({"message": f"Błąd: {str(e)}"}), 500
+
+@app.route('/create-backup', methods=['POST'])
+async def create_backup():
+    loop = asyncio.get_event_loop()
+    try:
+        # Wykonanie operacji kopiowania w osobnym wątku (bo shutil.copytree nie jest async)
+        backup_path = await loop.run_in_executor(None, backup_manager.create_backup)
+        return jsonify({
+            "status": "Backup utworzony",
+            "newBackup": {
+                "id": hash(backup_path),
+                "name": os.path.basename(backup_path)
+            }
+        })
+    except Exception as e:
+        return jsonify({"status": "Błąd", "error": str(e)}), 500
+
+@app.route('/list-backups', methods=['GET'])
+async def list_backups():
+    loop = asyncio.get_event_loop()
+    backups = await loop.run_in_executor(None, backup_manager.list_backups)
+    result = [
+        {**b, "id": hash(b["name"])} for b in backups
+    ]
+    return jsonify({"backups": result})
+
+@app.route('/delete-backup', methods=['DELETE'])
+async def delete_backup():
+    backup_name = request.args.get('id')
+    if not backup_name:
+        return jsonify({"error": "Brak parametru `id`"}), 400
+
+    loop = asyncio.get_event_loop()
+    success = await loop.run_in_executor(None, backup_manager.delete_backup, backup_name)
+
+    if success:
+        return jsonify({"status": "deleted"})
+    else:
+        return jsonify({"error": "Nie znaleziono backupu"}), 404
+
 
     
 @app.before_serving
