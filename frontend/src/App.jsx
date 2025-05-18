@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
-const tabs = ['Serwer', 'Backup', 'Logi', 'O aplikacji'];
+const tabs = ['Serwer', 'Backup', 'Logi', 'Terminal', 'O aplikacji'];
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('Serwer');
@@ -14,6 +14,32 @@ export default function App() {
   const [serverStatus, setServerStatus] = useState('');
   const [autoRestart, setAutoRestart] = useState(false);
   const [restartInterval, setRestartInterval] = useState(10);
+  const [terminalLogs, setTerminalLogs] = useState([]);
+  const [terminalCommand, setTerminalCommand] = useState('');
+
+  const terminalInputRef = useRef(null); // <-- ref do pola tekstowego
+
+  useEffect(() => {
+    localStorage.setItem('terminalLogs', JSON.stringify(terminalLogs));
+  }, [terminalLogs]);
+
+  useEffect(() => {
+    localStorage.setItem('logs', JSON.stringify(logs));
+  }, [logs]);
+
+
+  useEffect(() => {
+    if (activeTab === 'Terminal' && terminalInputRef.current) {
+      terminalInputRef.current.focus();
+    }
+  }, [activeTab]);
+
+  useEffect(() => {
+    const savedTerminalLogs = JSON.parse(localStorage.getItem('terminalLogs') || '[]');
+    const savedLogs = JSON.parse(localStorage.getItem('logs') || '[]');
+    setTerminalLogs(savedTerminalLogs);
+    setLogs(savedLogs);
+  }, []);
 
   // Inicjalizacja testowych backupów
   useEffect(() => {
@@ -45,7 +71,15 @@ export default function App() {
     const fetchLogs = () => {
       fetch('http://localhost:5000/get-logs')
         .then((res) => res.json())
-        .then((data) => setLogs((prev) => [...prev, data.logs])); // Spread to add each log individually
+        .then((data) => {
+          if (Array.isArray(data.logs)) {
+            const newLines = data.logs
+              .map(line => line.trim())
+              .filter(line => line !== '');
+            setLogs((prev) => [...prev, ...newLines]);
+          }
+        })
+        .catch((err) => console.error('Błąd logów:', err));
     };
 
     fetchLogs();
@@ -54,14 +88,52 @@ export default function App() {
   }, []);
 
 
-  const handleStartServer = () => {
-    fetch('http://localhost:5000/start-server', { method: 'POST' })
+  useEffect(() => {
+    const fetchTerminalLogs = () => {
+      fetch('http://localhost:5000/read-terminal', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          if (Array.isArray(data.logs)) {
+            const newLines = data.logs
+              .map(line => line.trim())
+              .filter(line => line !== '');
+            setTerminalLogs((prev) => [...prev, ...newLines]);
+          }
+        })
+        .catch((err) => console.error('Błąd terminala:', err));
+    };
+
+    fetchTerminalLogs();
+    const interval = setInterval(fetchTerminalLogs, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handleClearTerminalLogs = () => {
+    setTerminalLogs([]);
+    localStorage.removeItem('terminalLogs');
+  };
+
+  const handleReloadLogs = () => {
+    fetch('http://localhost:5000/get-all-logs')
       .then((res) => res.json())
-      .then((result) => {
-        const log = `Serwer uruchomiony: ${result.status || 'OK'}`;
-        setMessage(log);
-        setLogs((prev) => [...prev, log]);
-      });
+      .then((data) => {
+        if (Array.isArray(data.logs)) {
+          const lines = data.logs.map(line => line.trim()).filter(line => line !== '');
+          setLogs(lines);
+          localStorage.setItem('logs', JSON.stringify(lines));
+        }
+      })
+      .catch((err) => console.error('Błąd ponownego pobierania logów:', err));
+  };
+
+
+  const handleStartServer = () => {
+    fetch('http://localhost:5000/start-server', { method: 'POST' });
   };
 
   const handleStopServer = () => {
@@ -95,7 +167,33 @@ export default function App() {
     });
   };
 
-  const handleClearLogs = () => setLogs([]);
+  const handleClearLogs = () => {
+    setLogs([]);
+    localStorage.removeItem('logs');
+  };
+
+  const handleSendCommand = (e) => {
+    e.preventDefault();
+    const trimmed = terminalCommand.trim();
+    if (trimmed === '') return;
+
+    // Dodaj komendę jako linię logu
+    setTerminalLogs((prev) => [...prev, `> ${trimmed}`]);
+
+    fetch('http://localhost:5000/send-command', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ command: trimmed }),
+    })
+      .then(() => setTerminalCommand(''))
+      .catch((err) => {
+        setTerminalLogs((prev) => [...prev, `[Błąd]: ${err.message}`]);
+        console.error('Błąd wysyłania komendy:', err);
+      });
+  };
+
 
   const handleLoadBackup = (backupName) => {
     setMessage(`Wczytano backup: ${backupName}`);
@@ -186,15 +284,45 @@ export default function App() {
             <p>{message}</p>
           </div>
         );
+      case 'Terminal':
+        return (
+          <div className="logs-panel">
+            <pre className="log-list">
+              {terminalLogs.join('\n')}
+            </pre>
+            <form
+              onSubmit={handleSendCommand}
+              style={{ display: 'flex', gap: '0.5rem', marginTop: '1rem' }}
+            >
+              <input
+                ref={terminalInputRef}
+                type="text"
+                value={terminalCommand}
+                onChange={(e) => setTerminalCommand(e.target.value)}
+                placeholder="Wpisz komendę"
+                style={{ flexGrow: 1, padding: '0.5rem' }}
+              />
+              <button type="submit" className="btn">Wyślij</button>
+              <button
+                type="button"
+                className="btn"
+                onClick={() => handleClearTerminalLogs()}
+              >
+                🧹 Wyczyść terminal
+              </button>
+            </form>
+          </div>
+        );
       case 'Logi':
         return (
           <div className="logs-panel">
-            <ul className="log-list">
-              {logs.map((log, index) => (
-                <li key={index}>{log}</li>
-              ))}
-            </ul>
-            <button className="btn" onClick={handleClearLogs}>🧹 Wyczyść logi</button>
+            <pre className="log-list">
+              {logs.join('\n')}
+            </pre>
+            <div style={{ display: 'flex', gap: '0.5rem' }}>
+              <button className="btn" onClick={handleReloadLogs}>🔄 Wczytaj ponownie</button>
+              <button className="btn" onClick={handleClearLogs}>🧹 Wyczyść logi</button>
+            </div>
           </div>
         );
       case 'O aplikacji':
